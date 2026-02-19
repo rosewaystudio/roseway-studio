@@ -2,22 +2,25 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Contact | Roseway Studio',
-  description: 'Get in touch with Roseway Studio. Schedule a consultation to discuss your organization\'s digital infrastructure needs.',
+  description: 'Start a discovery conversation with Roseway Studio. We\'ll spend 45 minutes understanding where you are, where you\'re going, and whether the Strategic Anchor Framework is the right next step.',
 };
 
 export default function ContactPage() {
   return (
     <>
+      {/* Success Message */}
+        {typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('success') === 'true' && (
+          <div className="bg-teal text-white py-4 text-center">
+            <p className="text-lg font-semibold">Thank you! We'll be in touch within 24 hours.</p>
+          </div>
+        )}
       {/* Page Header */}
       <section className="bg-gray-50 py-16">
         <div className="container-width">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-5xl font-bold text-navy mb-6">Get In Touch</h1>
+            <h1 className="text-5xl font-bold text-navy mb-6">Start the Conversation</h1>
             <p className="text-xl text-gray-700">
-              Ready to talk about your organization's digital needs? We'd love to hear from you.
-            </p>
-            <p className="text-lg text-gray-600 mt-4">
-              Whether you have a specific project in mind or just want to explore possibilities, let's start a conversation.
+              There's no agenda other than understanding where you are and where you're trying to go. If it feels like there's a fit, we'll talk about what that looks like. If not, we'll point you toward someone who might be a better match.
             </p>
           </div>
         </div>
@@ -29,24 +32,27 @@ export default function ContactPage() {
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
             {/* Contact Form */}
             <div>
-              <h2 className="text-3xl font-bold text-navy mb-6">Send Us a Message</h2>
-              
+              <h2 className="text-3xl font-bold text-navy mb-6">Tell Us About Where You Are</h2>
+
               <form 
-                name="contact"
+                action="https://api.web3forms.com/submit"
                 method="POST"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
                 className="space-y-6"
               >
-                {/* Netlify form detection */}
-                <input type="hidden" name="form-name" value="contact" />
+                {/* Web3Forms Access Key - REPLACE WITH YOUR ACTUAL KEY */}
+                <input type="hidden" name="access_key" value={process.env.NEXT_PUBLIC_WEB3FORMS_KEY} />
                 
+                {/* Redirect after submission */}
+                <input type="hidden" name="redirect" value="https://rosewaystudio.com/contact?success=true" />
+                
+                {/* Subject line for email */}
+                <input type="hidden" name="subject" value="New Contact Form Submission from Roseway Studio Website" />
+                
+                {/* From name */}
+                <input type="hidden" name="from_name" value="Roseway Studio Website" />
+
                 {/* Honeypot for spam protection */}
-                <div className="hidden">
-                  <label>
-                    Don't fill this out if you're human: <input name="bot-field" />
-                  </label>
-                </div>
+                <input type="checkbox" name="botcheck" className="hidden" />
 
                 {/* Name */}
                 <div>
@@ -117,8 +123,8 @@ export default function ContactPage() {
                     <label className="flex items-center gap-2">
                       <input
                         type="checkbox"
-                        name="projectType[]"
-                        value="website"
+                        name="projectType"
+                        value="Website Design & Development"
                         className="w-5 h-5 text-teal border-gray-300 rounded focus:ring-teal"
                       />
                       <span className="text-gray-700">Website Design & Development</span>
@@ -126,8 +132,8 @@ export default function ContactPage() {
                     <label className="flex items-center gap-2">
                       <input
                         type="checkbox"
-                        name="projectType[]"
-                        value="workspace"
+                        name="projectType"
+                        value="Workspace Implementation"
                         className="w-5 h-5 text-teal border-gray-300 rounded focus:ring-teal"
                       />
                       <span className="text-gray-700">Workspace Implementation</span>
@@ -135,8 +141,8 @@ export default function ContactPage() {
                     <label className="flex items-center gap-2">
                       <input
                         type="checkbox"
-                        name="projectType[]"
-                        value="infrastructure"
+                        name="projectType"
+                        value="Digital Infrastructure"
                         className="w-5 h-5 text-teal border-gray-300 rounded focus:ring-teal"
                       />
                       <span className="text-gray-700">Digital Infrastructure</span>
@@ -144,8 +150,8 @@ export default function ContactPage() {
                     <label className="flex items-center gap-2">
                       <input
                         type="checkbox"
-                        name="projectType[]"
-                        value="consultation"
+                        name="projectType"
+                        value="Not Sure - Need Consultation"
                         className="w-5 h-5 text-teal border-gray-300 rounded focus:ring-teal"
                       />
                       <span className="text-gray-700">Not Sure - Need Consultation</span>
@@ -178,96 +184,66 @@ export default function ContactPage() {
               </form>
             </div>
 
-            {/* Direct Contact Info */}
+            {/* Direct Contact + What to Expect */}
             <div>
               <h2 className="text-3xl font-bold text-navy mb-6">Prefer to Reach Out Directly?</h2>
-              
-              <div className="space-y-8">
-                {/* Email */}
+
+              <div className="space-y-8 mb-12">
                 <div>
                   <h3 className="text-xl font-bold text-navy mb-2">Email</h3>
-                  <a 
-                    href="mailto:contact@rosewaystudio.com"
+                  <a
+                    href="mailto:contact@roseway.com"
                     className="text-teal hover:text-teal-dark text-lg transition-colors"
                   >
-                    contact@rosewaystudio.com
+                    contact@roseway.com
                   </a>
                 </div>
 
-                {/* Calendar Placeholder */}
-                <div>
-                  <h3 className="text-xl font-bold text-navy mb-2">Schedule a Consultation</h3>
-                  <p className="text-gray-600 mb-4">
-                    Calendar scheduling coming soon. For now, please email to schedule a 30-minute consultation.
-                  </p>
-                  {/* TODO: Add Calendly or Google Calendar scheduling link here */}
-                </div>
-
-                {/* Phone Placeholder */}
-                {/* 
                 <div>
                   <h3 className="text-xl font-bold text-navy mb-2">Phone</h3>
-                  <p className="text-gray-700 text-lg">
-                    [Phone number to be added]
-                  </p>
+                  <a
+                    href="tel:3132078786"
+                    className="text-teal hover:text-teal-dark text-lg transition-colors"
+                  >
+                    (313) 207-8786
+                  </a>
                 </div>
-                */}
 
-                {/* Location */}
                 <div>
                   <h3 className="text-xl font-bold text-navy mb-2">Location</h3>
                   <p className="text-gray-700">Detroit, MI</p>
-                  <p className="text-gray-600">Serving nonprofits and mission-driven organizations nationally</p>
+                  <p className="text-gray-600">Serving founders and mission-driven organizations nationally</p>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-bold text-navy mb-2">Schedule a Discovery Call</h3>
+                  <p className="text-gray-600">
+                    Calendar scheduling coming soon. For now, please email or call to schedule your 45-minute discovery conversation.
+                  </p>
                 </div>
               </div>
 
               {/* What to Expect */}
-              <div className="mt-12 bg-gray-50 rounded-lg p-8">
+              <div className="bg-gray-50 rounded-lg p-8">
                 <h3 className="text-2xl font-bold text-navy mb-6">What to Expect</h3>
-                <ol className="space-y-4">
-                  <li className="flex gap-3">
-                    <span className="flex-shrink-0 w-8 h-8 bg-teal text-white rounded-full flex items-center justify-center font-bold">
-                      1
-                    </span>
-                    <div>
-                      <p className="text-gray-700">We'll respond within 24 hours</p>
-                    </div>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="flex-shrink-0 w-8 h-8 bg-teal text-white rounded-full flex items-center justify-center font-bold">
-                      2
-                    </span>
-                    <div>
-                      <p className="text-gray-700">Schedule a discovery call (usually 30-45 minutes)</p>
-                    </div>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="flex-shrink-0 w-8 h-8 bg-teal text-white rounded-full flex items-center justify-center font-bold">
-                      3
-                    </span>
-                    <div>
-                      <p className="text-gray-700">Discuss your mission, challenges, and goals</p>
-                    </div>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="flex-shrink-0 w-8 h-8 bg-teal text-white rounded-full flex items-center justify-center font-bold">
-                      4
-                    </span>
-                    <div>
-                      <p className="text-gray-700">Recommend the right approach for your needs</p>
-                    </div>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="flex-shrink-0 w-8 h-8 bg-teal text-white rounded-full flex items-center justify-center font-bold">
-                      5
-                    </span>
-                    <div>
-                      <p className="text-gray-700">Provide a custom proposal with transparent pricing</p>
-                    </div>
-                  </li>
+                <ol className="space-y-5">
+                  {[
+                    "We'll respond within 24 hours",
+                    "Schedule a 45-minute discovery conversation",
+                    "We'll listen to understand where you are, where you're going, and what's in the way",
+                    "We'll share what we're hearing and recommend whether and how we can help",
+                    "If there's a fit, we'll send you the Service Offering within 24 hours and propose a follow-up to discuss scope and timeline",
+                  ].map((step, i) => (
+                    <li key={i} className="flex gap-3">
+                      <span className="flex-shrink-0 w-8 h-8 bg-teal text-white rounded-full flex items-center justify-center font-bold text-sm">
+                        {i + 1}
+                      </span>
+                      <p className="text-gray-700 mt-1">{step}</p>
+                    </li>
+                  ))}
                 </ol>
-                <p className="text-gray-600 mt-6 italic">
-                  No pressure, no sales tactics—just an honest conversation about whether we're the right fit for your organization.
+                <p className="text-gray-600 mt-6 italic text-sm">
+                  No pitch, no pressure — just an honest conversation about whether we're the right fit for where you're going.
                 </p>
               </div>
             </div>

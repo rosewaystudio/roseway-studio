@@ -27,6 +27,12 @@ export default function Footer() {
               >
                 Services
               </Link>
+               <Link 
+                href="/work" 
+                className="text-gray-300 hover:text-teal transition-colors"
+              >
+                Work
+              </Link>
               <Link 
                 href="/about" 
                 className="text-gray-300 hover:text-teal transition-colors"
