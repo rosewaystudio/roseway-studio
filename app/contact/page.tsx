@@ -15,11 +15,11 @@ export default function ContactPage() {
           </div>
         )}
       {/* Page Header */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-navy py-16">
         <div className="container-width">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-5xl font-bold text-navy mb-6">Start the Conversation</h1>
-            <p className="text-xl text-gray-700">
+            <h1 className="text-5xl font-bold text-white mb-6">Start the Conversation</h1>
+            <p className="text-xl text-white/90">
               There's no agenda other than understanding where you are and where you're trying to go. If it feels like there's a fit, we'll talk about what that looks like. If not, we'll point you toward someone who might be a better match.
             </p>
           </div>
@@ -224,7 +224,7 @@ export default function ContactPage() {
               </div>
 
               {/* What to Expect */}
-              <div className="bg-gray-50 rounded-lg p-8">
+              <div className="bg-gray-100 rounded-lg p-8">
                 <h3 className="text-2xl font-bold text-navy mb-6">What to Expect</h3>
                 <ol className="space-y-5">
                   {[
