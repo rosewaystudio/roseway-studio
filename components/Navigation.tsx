@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 
 export default function Navigation() {
@@ -17,12 +18,23 @@ export default function Navigation() {
     <nav className="bg-white border-b border-gray-100 sticky top-0 z-50">
       <div className="container-width">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <Link 
-            href="/" 
-            className="text-2xl font-bold text-navy hover:text-teal transition-colors"
+          {/* Logo + Wordmark */}
+          <Link
+            href="/"
+            className="flex items-center gap-3 hover:opacity-80 transition-opacity"
+            aria-label="Roseway Studio home"
           >
-            Roseway Studio
+            <Image
+              src="/compass-rose-dark.png"
+              alt="Roseway Studio compass rose logo"
+              width={40}
+              height={40}
+              className="w-10 h-10 object-contain"
+              priority
+            />
+            <span className="text-2xl font-bold text-navy">
+              Roseway Studio
+            </span>
           </Link>
 
           {/* Desktop Navigation */}

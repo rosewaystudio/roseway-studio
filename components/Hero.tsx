@@ -23,20 +23,41 @@ export default function Hero({
   showCompassRose = true 
 }: HeroProps) {
   return (
-    <section className="relative bg-navy text-white overflow-hidden">
-      {/* Compass Rose Background */}
-      {showCompassRose && (
-        <div className="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none">
-          <Image
-            src="/compass-rose.png"
-            alt=""
-            width={800}
-            height={800}
-            className="object-contain"
-            priority
-          />
+    <>
+      {/* Hero Section */}
+      <section className="relative bg-navy text-white overflow-hidden">
+        {/* Teal compass rose SVG outline — centered, low opacity */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none" aria-hidden="true">
+          <svg
+            viewBox="0 0 400 400"
+            fill="none"
+            className="w-[520px] h-[520px] opacity-10"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            {/* Outer circle */}
+            <circle cx="200" cy="200" r="180" stroke="#2BB3C0" strokeWidth="2"/>
+            {/* Inner circle */}
+            <circle cx="200" cy="200" r="120" stroke="#2BB3C0" strokeWidth="1.5" strokeDasharray="6 6"/>
+            {/* Center circle */}
+            <circle cx="200" cy="200" r="12" stroke="#2BB3C0" strokeWidth="2"/>
+            <circle cx="200" cy="200" r="4" fill="#2BB3C0"/>
+            {/* Cardinal points — N, S, E, W long spikes */}
+            <polygon points="200,20 192,185 208,185" fill="#2BB3C0"/>
+            <polygon points="200,380 192,215 208,215" fill="#2BB3C0"/>
+            <polygon points="20,200 185,192 185,208" fill="#2BB3C0"/>
+            <polygon points="380,200 215,192 215,208" fill="#2BB3C0"/>
+            {/* Intercardinal points — NE, NW, SE, SW shorter spikes */}
+            <polygon points="327,73 209,191 218,200" fill="#2BB3C0" opacity="0.7"/>
+            <polygon points="73,73 191,191 200,182" fill="#2BB3C0" opacity="0.7"/>
+            <polygon points="327,327 209,209 200,218" fill="#2BB3C0" opacity="0.7"/>
+            <polygon points="73,327 191,209 182,200" fill="#2BB3C0" opacity="0.7"/>
+            {/* Tick marks at cardinal ring */}
+            <line x1="200" y1="18" x2="200" y2="30" stroke="#2BB3C0" strokeWidth="2"/>
+            <line x1="200" y1="370" x2="200" y2="382" stroke="#2BB3C0" strokeWidth="2"/>
+            <line x1="18" y1="200" x2="30" y2="200" stroke="#2BB3C0" strokeWidth="2"/>
+            <line x1="370" y1="200" x2="382" y2="200" stroke="#2BB3C0" strokeWidth="2"/>
+          </svg>
         </div>
-      )}
 
       {/* Content */}
       <div className="relative container-width py-24 md:py-32">
@@ -69,6 +90,7 @@ export default function Hero({
           </div>
         </div>
       </div>
-    </section>
+      </section>
+    </>
   );
 }

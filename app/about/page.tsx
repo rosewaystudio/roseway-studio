@@ -101,34 +101,44 @@ export default function AboutPage() {
       <section className="section-padding bg-white">
         <div className="container-width">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-navy mb-12 text-center">What This Looks Like in Practice</h2>
+            <h2 className="text-4xl font-bold text-navy mb-4 text-center">What This Looks Like in Practice</h2>
+            <p className="text-gray-600 text-center mb-12">
+              We've worked with early-stage founders, launching organizations, and established teams whose infrastructure had fallen behind their mission.{' '}
+              <a href="/work" className="text-teal hover:underline font-medium">See the full case studies →</a>
+            </p>
 
-            <div className="space-y-8">
+            <div className="space-y-6">
               {[
                 {
                   org: "A Safe Space for Men",
                   type: "Strategic Partnership · Early-Stage Organization",
-                  description: "A founding team arrived with a powerful idea and nothing else. They needed mission and vision statements, a strategic business plan, web presence, and ongoing operational guidance. They needed to become an organization.",
-                  quote: "They didn't need someone to build them a website. They needed a partner to help them become an organization.",
+                  summary: "Helped a founding team build organizational infrastructure from the ground up — mission and vision, strategic business plan, web presence, and ongoing fractional COO guidance.",
+                },
+                {
+                  org: "Soulivity",
+                  type: "Strategic Anchor Framework · Engagement in Progress",
+                  summary: "Phase 1 Business Architecture Audit surfaced a foundational anchor problem across a digital media platform preparing to launch video syndication. Phases 2 and 3 in progress.",
                 },
                 {
                   org: "SafetyZone Behavioral Health Urgent Care",
                   type: "Digital Infrastructure · Early-Stage Organization",
-                  description: "SafetyZone was preparing to launch with critical digital infrastructure gaps that would have undermined their credibility and operations from day one. We migrated their email environment and established reliable communication infrastructure ahead of launch.",
-                  quote: "A behavioral health organization that can't reliably communicate isn't just inefficient — it's a barrier to the people it exists to serve. Infrastructure is mission-critical.",
+                  summary: "Migrated a 14-user email environment and established reliable communication infrastructure for a behavioral health organization ahead of its launch.",
                 },
                 {
                   org: "Building Better Men",
                   type: "Digital Infrastructure · Established Organization",
-                  description: "Non-functional email accounts and active website security vulnerabilities were quietly eroding trust with every person who tried to reach them. We restored their digital presence and returned the organization to stable operation.",
-                  quote: "They weren't looking for a rebrand. They needed someone to fix what was broken so their mission could move forward unobstructed.",
+                  summary: "Restored non-functional email accounts and resolved active website security vulnerabilities that were quietly eroding trust with every person who tried to reach them.",
                 },
               ].map((item, i) => (
-                <div key={i} className="border-l-4 border-teal pl-8">
-                  <p className="text-teal text-sm font-semibold uppercase tracking-wide mb-1">{item.type}</p>
-                  <h3 className="text-2xl font-bold text-navy mb-3">{item.org}</h3>
-                  <p className="text-gray-700 mb-4">{item.description}</p>
-                  <p className="text-navy font-semibold italic">{item.quote}</p>
+                <div key={i} className="flex items-start gap-6 border-l-4 border-teal pl-6 py-2">
+                  <div className="flex-1">
+                    <p className="text-teal text-xs font-semibold uppercase tracking-wide mb-1">{item.type}</p>
+                    <h3 className="text-lg font-bold text-navy mb-1">{item.org}</h3>
+                    <p className="text-gray-600 text-sm">{item.summary}</p>
+                  </div>
+                  <a href="/work" className="text-teal text-sm font-medium hover:underline whitespace-nowrap mt-1">
+                    Full story →
+                  </a>
                 </div>
               ))}
             </div>
@@ -145,7 +155,7 @@ export default function AboutPage() {
             <div className="space-y-8">
               {[
                 {
-                  title: "Strategic Partnership, Not Vendor Relationships",
+                  title: "Strategic Partnership Over Vendor Relationship",
                   description: "We don't just execute tasks. We think strategically about what you should build, why, and in what order — then build it alongside you. Our goal is to be the partner you call when a big decision is on the table.",
                 },
                 {
@@ -184,10 +194,10 @@ export default function AboutPage() {
                 Start the Conversation
               </Button>
               <a
-                href="mailto:contact@roseway.com"
+                href="mailto:contact@rosewaystudio.com"
                 className="text-white hover:text-teal transition-colors font-medium"
               >
-                or email contact@roseway.com
+                or email contact@rosewaystudio.com
               </a>
             </div>
           </div>

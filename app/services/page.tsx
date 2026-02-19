@@ -247,10 +247,10 @@ export default function ServicesPage() {
                 Start the Conversation
               </Button>
               <a
-                href="mailto:contact@roseway.com"
+                href="mailto:contact@rosewaystudio.com"
                 className="text-white hover:text-teal transition-colors font-medium"
               >
-                or email contact@roseway.com
+                or email contact@rosewaystudio.com
               </a>
             </div>
           </div>

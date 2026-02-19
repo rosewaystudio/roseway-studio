@@ -71,19 +71,53 @@ export default function Home() {
                   phase: "Phase 1",
                   title: "Business Architecture Audit",
                   description: "Understand your mission, operations, and alignment gaps — Days 1–10",
+                  icon: (
+                    <svg viewBox="0 0 48 48" fill="none" className="w-12 h-12 mb-4" aria-hidden="true">
+                      <rect x="8" y="6" width="32" height="36" rx="3" stroke="#2BB3C0" strokeWidth="2.5"/>
+                      <line x1="15" y1="16" x2="33" y2="16" stroke="#2BB3C0" strokeWidth="2.5" strokeLinecap="round"/>
+                      <line x1="15" y1="23" x2="33" y2="23" stroke="#2BB3C0" strokeWidth="2.5" strokeLinecap="round"/>
+                      <line x1="15" y1="30" x2="25" y2="30" stroke="#2BB3C0" strokeWidth="2.5" strokeLinecap="round"/>
+                      <circle cx="36" cy="36" r="7" fill="#0B1E3C"/>
+                      <line x1="33" y1="36" x2="39" y2="36" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+                      <line x1="36" y1="33" x2="36" y2="39" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+                    </svg>
+                  ),
                 },
                 {
                   phase: "Phase 2",
                   title: "Alignment Framework",
                   description: "Build your decision-making framework and strategic guardrails — Days 11–30",
+                  icon: (
+                    <svg viewBox="0 0 48 48" fill="none" className="w-12 h-12 mb-4" aria-hidden="true">
+                      <circle cx="24" cy="24" r="16" stroke="#2BB3C0" strokeWidth="2.5"/>
+                      <circle cx="24" cy="24" r="3" fill="#0B1E3C"/>
+                      <line x1="24" y1="8" x2="24" y2="14" stroke="#2BB3C0" strokeWidth="2.5" strokeLinecap="round"/>
+                      <line x1="24" y1="34" x2="24" y2="40" stroke="#2BB3C0" strokeWidth="2.5" strokeLinecap="round"/>
+                      <line x1="8" y1="24" x2="14" y2="24" stroke="#2BB3C0" strokeWidth="2.5" strokeLinecap="round"/>
+                      <line x1="34" y1="24" x2="40" y2="24" stroke="#2BB3C0" strokeWidth="2.5" strokeLinecap="round"/>
+                      <line x1="24" y1="24" x2="24" y2="16" stroke="#0B1E3C" strokeWidth="2.5" strokeLinecap="round"/>
+                      <line x1="24" y1="24" x2="30" y2="24" stroke="#0B1E3C" strokeWidth="2" strokeLinecap="round"/>
+                    </svg>
+                  ),
                 },
                 {
                   phase: "Phase 3",
                   title: "Implementation Roadmap",
                   description: "What to keep, eliminate, and change — with a clear path forward — Days 31–45",
+                  icon: (
+                    <svg viewBox="0 0 48 48" fill="none" className="w-12 h-12 mb-4" aria-hidden="true">
+                      <path d="M8 36 L8 20 L20 20 L20 28 L32 28 L32 14 L40 14" stroke="#2BB3C0" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      <polyline points="34,10 40,14 34,18" fill="#2BB3C0" stroke="#2BB3C0" strokeWidth="1.5" strokeLinejoin="round"/>
+                      <circle cx="8" cy="36" r="3" fill="#0B1E3C"/>
+                      <circle cx="20" cy="20" r="3" fill="#0B1E3C"/>
+                      <circle cx="32" cy="28" r="3" fill="#0B1E3C"/>
+                      <circle cx="40" cy="14" r="3" fill="#0B1E3C"/>
+                    </svg>
+                  ),
                 },
               ].map((phase, i) => (
                 <div key={i} className="border-l-4 border-teal pl-6">
+                  {phase.icon}
                   <p className="text-teal font-semibold text-sm uppercase tracking-wide mb-1">{phase.phase}</p>
                   <h3 className="text-xl font-bold text-navy mb-3">{phase.title}</h3>
                   <p className="text-gray-600">{phase.description}</p>
@@ -96,6 +130,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
 
       {/* Case Study */}
       <section className="section-padding bg-gray-50">
@@ -157,10 +192,10 @@ export default function Home() {
                 Start the Conversation
               </Button>
               <a
-                href="mailto:contact@roseway.com"
+                href="mailto:contact@rosewaystudio.com"
                 className="text-white hover:text-teal transition-colors font-medium"
               >
-                or email contact@roseway.com
+                or email contact@rosewaystudio.com
               </a>
             </div>
           </div>
