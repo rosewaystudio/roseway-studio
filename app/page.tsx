@@ -8,7 +8,7 @@ export default function Home() {
       {/* Hero Section */}
       <Hero
         title="From Idea to Organization"
-        subtitle="Strategic partnership for founders who are ready to build"
+        subtitle="Building the organization behind the Vision"
         primaryCTA={{
           text: "Start the Conversation",
           href: "/contact"
@@ -34,10 +34,10 @@ export default function Home() {
       </section>
 
       {/* Who We Serve */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-navy text-white">
         <div className="container-width">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-navy mb-10 text-center">Who We Serve</h2>
+            <h2 className="text-4xl font-bold text-white mb-10 text-center">Who We Serve</h2>
             <div className="grid md:grid-cols-2 gap-6">
               {[
                 "Founders with vision and momentum but no operational infrastructure to match",
@@ -133,7 +133,7 @@ export default function Home() {
 
 
       {/* Case Study */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-gray-100">
         <div className="container-width">
           <div className="max-w-4xl mx-auto">
             <div className="bg-white rounded-xl shadow-sm p-10">

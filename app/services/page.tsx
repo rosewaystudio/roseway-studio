@@ -10,11 +10,11 @@ export default function ServicesPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-navy py-16">
         <div className="container-width">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-5xl font-bold text-navy mb-6">How We Work Together</h1>
-            <p className="text-xl text-gray-700">
+            <h1 className="text-5xl font-bold text-white mb-6">How We Work Together</h1>
+            <p className="text-xl text-white mb-8">
               Most founders don't have a technology problem. They have a presence, alignment, and communication problem. The right technology — built on a clear strategic foundation — is how you solve it.
             </p>
           </div>
@@ -181,7 +181,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Investment Summary Table */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-gray-100">
         <div className="container-width">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold text-navy mb-10 text-center">Investment Summary</h2>

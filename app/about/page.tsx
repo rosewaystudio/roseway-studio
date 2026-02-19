@@ -10,13 +10,10 @@ export default function AboutPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-navy py-16">
         <div className="container-width">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-5xl font-bold text-navy mb-6">About Roseway Studio</h1>
-            <p className="text-xl text-gray-700">
-              Strategic partnership for founders who are ready to build — from idea to organization
-            </p>
+            <h1 className="text-5xl font-bold text-white mb-6">About Roseway Studio</h1>
           </div>
         </div>
       </section>
@@ -39,7 +36,7 @@ export default function AboutPage() {
       </section>
 
       {/* About Andrea */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-gray-100">
         <div className="container-width">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold text-navy mb-10 text-center">Your Strategic Partner</h2>
@@ -47,7 +44,7 @@ export default function AboutPage() {
             <div className="flex justify-center mb-12">
               <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-teal shadow-lg">
                 <img
-                  src="/andrea-frazier.png"
+                  src="/andrea-frazier.jpeg"
                   alt="Andrea Frazier, Founder of Roseway Studio"
                   className="w-full h-full object-cover"
                 />
@@ -147,7 +144,7 @@ export default function AboutPage() {
       </section>
 
       {/* Our Values */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-gray-100">
         <div className="container-width">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold text-navy mb-12 text-center">How We Work</h2>

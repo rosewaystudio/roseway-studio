@@ -10,11 +10,11 @@ export default function WorkPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-navy py-16">
         <div className="container-width">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-5xl font-bold text-navy mb-6">Our Work</h1>
-            <p className="text-xl text-gray-700">
+            <h1 className="text-5xl font-bold text-white mb-6">Our Work</h1>
+            <p className="text-xl text-white mb-8">
               Every engagement is different. What stays constant is the approach: understand the mission, surface the gaps, build the infrastructure that closes them.
             </p>
           </div>
@@ -33,7 +33,7 @@ export default function WorkPage() {
               </p>
             </div>
 
-            <div className="bg-gray-50 rounded-xl p-8 mb-8">
+            <div className="bg-gray-100 rounded-xl p-8 mb-8">
               <h3 className="text-xl font-bold text-navy mb-4">The Situation</h3>
               <p className="text-gray-700 leading-relaxed">
                 The founding team had deep conviction and community relationships — but no organizational infrastructure to build on. No documented mission or vision. No strategic plan. No digital presence. No operational systems. They were functioning on belief alone, and belief alone doesn't scale.
@@ -49,7 +49,7 @@ export default function WorkPage() {
                   "Web design and development that established professional presence from day one",
                   "Ongoing strategic guidance and operational support",
                 ].map((item, i) => (
-                  <div key={i} className="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
+                  <div key={i} className="flex items-start gap-3 bg-gray-100 rounded-lg p-4">
                     <svg className="w-5 h-5 text-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
@@ -92,7 +92,7 @@ export default function WorkPage() {
       </section>
 
       {/* Case Study 02 — SafetyZone */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-gray-100">
         <div className="container-width">
           <div className="max-w-4xl mx-auto">
             <div className="mb-8">
@@ -119,7 +119,7 @@ export default function WorkPage() {
                   "Configured security settings and user permissions across the organization",
                   "Ongoing website maintenance partnership to support long-term operational stability",
                 ].map((item, i) => (
-                  <div key={i} className="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
+                  <div key={i} className="flex items-start gap-3 bg-white rounded-lg p-4">
                     <svg className="w-5 h-5 text-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
@@ -150,7 +150,7 @@ export default function WorkPage() {
               </p>
             </div>
 
-            <div className="bg-gray-50 rounded-xl p-8 mb-8">
+            <div className="bg-gray-100 rounded-xl p-8 mb-8">
               <h3 className="text-xl font-bold text-navy mb-4">The Situation</h3>
               <p className="text-gray-700 leading-relaxed">
                 An established organization doing meaningful work had a problem it didn't fully see: broken infrastructure was actively undermining its credibility. Email accounts weren't functioning. The website carried security vulnerabilities. Every person who tried to reach them and couldn't — or who landed on an unsecured site — experienced a gap between the organization's mission and its reality. The damage was invisible until someone looked for it.
@@ -166,7 +166,7 @@ export default function WorkPage() {
                   "Returned the organization to a stable, trustworthy digital presence",
                   "Documentation to support ongoing maintenance and prevent recurrence",
                 ].map((item, i) => (
-                  <div key={i} className="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
+                  <div key={i} className="flex items-start gap-3 bg-gray-100 rounded-lg p-4">
                     <svg className="w-5 h-5 text-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
@@ -186,7 +186,7 @@ export default function WorkPage() {
       </section>
 
       {/* Case Study 04 — Soulivity */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-gray-100">
         <div className="container-width">
           <div className="max-w-4xl mx-auto">
             <div className="mb-8">
@@ -231,7 +231,7 @@ export default function WorkPage() {
                     detail: "The planned video expansion makes strategic sense — the content and interview subjects are already there. But syndicating to a wider audience without a coherent anchor would distribute the confusion, not the brand.",
                   },
                 ].map((item, i) => (
-                  <div key={i} className="flex items-start gap-4 bg-gray-50 rounded-lg p-5">
+                  <div key={i} className="flex items-start gap-4 bg-white rounded-lg p-5">
                     <svg className="w-5 h-5 text-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
                     </svg>
