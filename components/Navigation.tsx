@@ -36,12 +36,13 @@ export default function Navigation() {
                 {link.label}
               </Link>
             ))}
-            <Link
-              href="/contact"
+            <a href="https://calendar.app.google/cJjLJ9wEnnHzJVN2A"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-teal text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-dark transition-colors"
             >
               Schedule Consultation
-            </Link>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -77,13 +78,14 @@ export default function Navigation() {
                   {link.label}
                 </Link>
               ))}
-              <Link
-                href="/contact"
+              <a href="https://calendar.app.google/cJjLJ9wEnnHzJVN2A"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}
                 className="bg-teal text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-dark transition-colors text-center"
               >
                 Schedule Consultation
-              </Link>
+              </a>
             </div>
           </div>
         )}

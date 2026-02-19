@@ -192,10 +192,10 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-xl font-bold text-navy mb-2">Email</h3>
                   <a
-                    href="mailto:contact@roseway.com"
+                    href="mailto:contact@rosewaystudio.com"
                     className="text-teal hover:text-teal-dark text-lg transition-colors"
                   >
-                    contact@roseway.com
+                    contact@rosewaystudio.com
                   </a>
                 </div>
 
