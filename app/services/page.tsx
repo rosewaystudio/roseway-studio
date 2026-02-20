@@ -14,9 +14,6 @@ export default function ServicesPage() {
         <div className="container-width">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-5xl font-bold text-white mb-6">How We Work Together</h1>
-            <p className="text-xl text-white mb-8">
-              Most founders don't have a technology problem. They have a presence, alignment, and communication problem. The right technology — built on a clear strategic foundation — is how you solve it.
-            </p>
           </div>
         </div>
       </section>
@@ -28,13 +25,13 @@ export default function ServicesPage() {
             <div className="flex items-start gap-6 mb-8">
               <span className="text-teal font-bold text-lg">01</span>
               <div>
-                <h2 className="text-4xl font-bold text-navy mb-2">Strategic Anchor Framework</h2>
+                <h2 className="text-4xl font-bold text-navy mb-2">Strategic Alignment Framework</h2>
                 <p className="text-xl text-gray-600 italic">The starting point for every engagement</p>
               </div>
             </div>
 
             <p className="text-gray-700 text-lg mb-8 leading-relaxed">
-              A structured, paid discovery process that identifies your strategic anchor — the core purpose that should guide every decision you make. We surface the gaps between where you are and where you're trying to go, and give you a clear picture of what it will take to close them.
+              A structured, paid discovery process that identifies your strategic alignment goal — the core purpose that should guide every decision you make. We surface the gaps between where you are and where you're trying to go, and give you a clear picture of what it will take to close them.
             </p>
 
             <div className="grid md:grid-cols-3 gap-6 mb-10">
@@ -67,12 +64,12 @@ export default function ServicesPage() {
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                 <div>
                   <p className="text-2xl font-bold text-navy mb-1">$2,500–$3,500</p>
-                  <p className="text-gray-600">45-day engagement · Includes: strategic anchor report · alignment gap analysis · implementation roadmap · 2 stakeholder interviews</p>
+                  <p className="text-gray-600">45-day engagement · Includes: strategic alignment report · alignment gap analysis · implementation roadmap · 2 stakeholder interviews</p>
                 </div>
                 <Button href="/contact">Start Here</Button>
               </div>
               <p className="text-gray-600 mt-4 italic text-sm">
-                Most clients begin with the Strategic Anchor Framework before moving to a retainer relationship. Partnership pricing available for qualifying organizations.
+                Most clients begin with the Strategic Alignment Framework before moving to a retainer relationship. Partnership pricing available for qualifying organizations.
               </p>
             </div>
           </div>
@@ -197,10 +194,10 @@ export default function ServicesPage() {
                 <tbody>
                   {[
                     {
-                      name: "Strategic Anchor Framework",
+                      name: "Strategic Alignment Framework",
                       sub: "45-day engagement",
                       price: "$2,500–$3,500",
-                      includes: "Strategic anchor report · Alignment gap analysis · Implementation roadmap · 2 stakeholder interviews",
+                      includes: "Strategic alignment report · Alignment gap analysis · Implementation roadmap · 2 stakeholder interviews",
                     },
                     {
                       name: "Strategic Partnership Retainer",
@@ -228,7 +225,7 @@ export default function ServicesPage() {
               </table>
             </div>
             <p className="text-gray-600 text-center mt-6 italic">
-              Most clients begin with the Strategic Anchor Framework before moving to a retainer relationship. Partnership pricing available for qualifying organizations — inquire directly.
+              Most clients begin with the Strategic Alignment Framework before moving to a retainer relationship. Partnership pricing available for qualifying organizations — inquire directly.
             </p>
           </div>
         </div>
@@ -240,7 +237,7 @@ export default function ServicesPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-4xl font-bold mb-6 text-white">Ready to take the next step?</h2>
             <p className="text-xl text-gray-200 mb-8">
-              Start with a discovery conversation. We'll spend 45 minutes understanding where you are, where you're going, and whether the Strategic Anchor Framework is the right next step.
+              Start with a discovery conversation. We'll spend 45 minutes understanding where you are, where you're going, and whether the Strategic Alignment Framework is the right next step.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button href="/contact" variant="primary">

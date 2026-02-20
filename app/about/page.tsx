@@ -29,7 +29,7 @@ export default function AboutPage() {
               Our name reflects who we are. The compass rose — our visual identity — represents strategic navigation and direction for founders who know where they want to go but need a clear path to get there. The rose family connection runs through our founder's heritage, making the name as authentic as the work.
             </p>
             <p className="text-gray-700 leading-relaxed">
-              Every engagement begins with the Strategic Anchor Framework — a structured discovery process that identifies the core purpose that should guide every decision an organization makes. From there, we work alongside founders as a fractional COO, providing ongoing strategic guidance, operational infrastructure, and digital implementation in one consistent relationship.
+              Every engagement begins with the Strategic Alignment Framework — a structured discovery process that identifies the core purpose that should guide every decision an organization makes. From there, we work alongside founders as a fractional COO, providing ongoing strategic guidance, operational infrastructure, and digital implementation in one consistent relationship.
             </p>
           </div>
         </div>
@@ -113,8 +113,8 @@ export default function AboutPage() {
                 },
                 {
                   org: "Soulivity",
-                  type: "Strategic Anchor Framework · Engagement in Progress",
-                  summary: "Phase 1 Business Architecture Audit surfaced a foundational anchor problem across a digital media platform preparing to launch video syndication. Phases 2 and 3 in progress.",
+                  type: "Strategic Alignment Framework · Engagement in Progress",
+                  summary: "Phase 1 Business Architecture Audit surfaced a foundational alignment problem across a digital media platform preparing to launch video syndication. Phases 2 and 3 in progress.",
                 },
                 {
                   org: "SafetyZone Behavioral Health Urgent Care",

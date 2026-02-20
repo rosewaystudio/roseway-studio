@@ -63,7 +63,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold text-navy mb-4 text-center">How We Work</h2>
             <p className="text-xl text-gray-600 text-center mb-12">
-              Every engagement begins with the Strategic Anchor Framework — a structured discovery process that surfaces the gap between where you are and where you're trying to go.
+              Every engagement begins with the Strategic Alignment Framework — a structured discovery process that surfaces the gap between where you are and where you're trying to go.
             </p>
             <div className="grid md:grid-cols-3 gap-8">
               {[
@@ -185,7 +185,7 @@ export default function Home() {
               Ready to build something that lasts?
             </h2>
             <p className="text-xl text-gray-200 mb-8">
-              Start with a discovery conversation. We'll spend 45 minutes understanding where you are, where you're going, and whether the Strategic Anchor Framework is the right next step.
+              Start with a discovery conversation. We'll spend 45 minutes understanding where you are, where you're going, and whether the Strategic Alignment Framework is the right next step.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button href="/contact" variant="primary">

@@ -191,12 +191,12 @@ export default function WorkPage() {
           <div className="max-w-4xl mx-auto">
             <div className="mb-8">
               <div className="flex items-center gap-3 mb-3">
-                <p className="text-teal text-sm font-semibold uppercase tracking-wide">Strategic Anchor Framework · Engagement in Progress</p>
+                <p className="text-teal text-sm font-semibold uppercase tracking-wide">Strategic Alignment Framework · Engagement in Progress</p>
                 <span className="bg-teal bg-opacity-10 text-teal text-xs font-semibold px-3 py-1 rounded-full">Phase 1 Complete</span>
               </div>
               <h2 className="text-4xl font-bold text-navy mb-4">Soulivity</h2>
               <p className="text-xl text-gray-600 leading-relaxed">
-                A digital media platform with real content assets, a growing audience, and plans to launch video syndication — but no strategic anchor holding it together. The Business Architecture Audit revealed that the problem wasn't content or technology. It was clarity.
+                A digital media platform with real content assets, a growing audience, and plans to launch video syndication — but no strategic alignment holding it together. The Business Architecture Audit revealed that the problem wasn't content or technology. It was clarity.
               </p>
             </div>
 
@@ -219,7 +219,7 @@ export default function WorkPage() {
                     detail: "The magazine, Community Hub, and Shop exist on separate platforms with no architecture connecting them. Users can't flow between products — they have to leave and find their way back.",
                   },
                   {
-                    flag: "Anchor content buried under filler content",
+                    flag: "Alignment content buried under filler content",
                     detail: "Soulivity has genuinely distinctive content — long-form columns from credentialed experts, an original health equity video series, exclusive artist interviews. But it has no content hierarchy, so this material competes for attention with generic 2-minute listicles. The most valuable content is invisible.",
                   },
                   {
@@ -228,7 +228,7 @@ export default function WorkPage() {
                   },
                   {
                     flag: "Video syndication without a foundation to syndicate from",
-                    detail: "The planned video expansion makes strategic sense — the content and interview subjects are already there. But syndicating to a wider audience without a coherent anchor would distribute the confusion, not the brand.",
+                    detail: "The planned video expansion makes strategic sense — the content and interview subjects are already there. But syndicating to a wider audience without a coherent alignment goal would distribute the confusion, not the brand.",
                   },
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-4 bg-white rounded-lg p-5">
@@ -253,7 +253,7 @@ export default function WorkPage() {
 
             <div className="mt-8 pt-8 border-t border-gray-200">
               <p className="text-navy font-semibold text-lg">
-                They didn't have a content problem or a technology problem. They had an anchor problem — and they needed someone to surface it before investing further in growth.
+                They didn't have a content problem or a technology problem. They had an alignment problem — and they needed someone to surface it before investing further in growth.
               </p>
             </div>
           </div>
@@ -266,7 +266,7 @@ export default function WorkPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-4xl font-bold mb-6 text-white">Ready to build something that lasts?</h2>
             <p className="text-xl text-gray-200 mb-8">
-              Start with a discovery conversation. We'll spend 45 minutes understanding where you are, where you're going, and whether the Strategic Anchor Framework is the right next step.
+              Start with a discovery conversation. We'll spend 45 minutes understanding where you are, where you're going, and whether the Strategic Alignment Framework is the right next step.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button href="/contact" variant="primary">

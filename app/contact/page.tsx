@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Contact | Roseway Studio',
-  description: 'Start a discovery conversation with Roseway Studio. We\'ll spend 45 minutes understanding where you are, where you\'re going, and whether the Strategic Anchor Framework is the right next step.',
+  description: 'Start a discovery conversation with Roseway Studio. We\'ll spend 45 minutes understanding where you are, where you\'re going, and whether the Strategic Alignment Framework is the right next step.',
 };
 
 export default function ContactPage() {
