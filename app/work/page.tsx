@@ -77,9 +77,9 @@ export default function WorkPage() {
 
             <blockquote className="border-l-4 border-teal pl-6 mb-4">
               <p className="text-gray-700 text-lg leading-relaxed italic mb-3">
-                "Roseway Studio has been an invaluable partner to us. From collaboration on our strategic direction and implementation of our technical infrastructure to the custom design and development of our website. Through our ongoing partnership with Roseway, we have been able to establish a professional presence to support our mission to expand mental health awareness, education and resources for men in the Detroit, MI area and beyond."
+                "Andrea has been an invaluable partner to us. From collaboration on our strategic direction and implementation of our technical infrastructure to the custom design and development of our website. Through our ongoing partnership with Roseway, we have been able to establish a professional presence to support our mission to expand mental health awareness, education and resources for men in the Detroit, MI area and beyond."
               </p>
-              <cite className="text-gray-500 text-sm font-medium not-italic">— A Safe Space for Men</cite>
+              <cite className="text-gray-500 text-sm font-medium not-italic">— William Word, CEO - A Safe Space for Men</cite>
             </blockquote>
 
             <div className="mt-8 pt-8 border-t border-gray-200">
@@ -129,6 +129,13 @@ export default function WorkPage() {
               </div>
             </div>
 
+            <blockquote className="border-l-4 border-teal pl-6 mb-4">
+              <p className="text-gray-700 text-lg leading-relaxed italic mb-3">
+                "Roseway Studio was happy to assist when we were locked out of our Microsoft 365 account, and were not able to find any resolution. We were mere weeks from our Grand Opening with no professional work email or productivity tools. She implemented Google Workspace for Nonprofits as a free solution that we were unaware of and migrated our team to the new platform within 2 weeks. We are now able to communicate and collaborate effectively as we serve our community. We highly recommend Andrea and Roseway Studio for any organization looking for strategic partnership and digital infrastructure support."
+              </p>
+              <cite className="text-gray-500 text-sm font-medium not-italic">— Audrey Smith, CEO - SafetyZone Behavioral Health Urgent Care</cite>
+            </blockquote>
+
             <div className="mt-8 pt-8 border-t border-gray-200">
               <p className="text-navy font-semibold text-lg">
                 A behavioral health organization that can't reliably communicate isn't just inefficient — it's a barrier to the people it exists to serve. Infrastructure is mission-critical.
@@ -175,6 +182,13 @@ export default function WorkPage() {
                 ))}
               </div>
             </div>
+
+            <blockquote className="border-l-4 border-teal pl-6 mb-4">
+              <p className="text-gray-700 text-lg leading-relaxed italic mb-3">
+                "5 out of 5 stars. Andrea is a lifesaver. She was able to quickly identify and resolve issues with our email and website that had been causing problems for months. Her expertise and professionalism were evident throughout the process, and she went above and beyond to ensure that everything was working smoothly. I highly recommend Roseway Studio to anyone in need of digital infrastructure support."
+              </p>
+              <cite className="text-gray-500 text-sm font-medium not-italic">— Odis Bellinger, B2M Founder & Director</cite>
+            </blockquote>
 
             <div className="mt-8 pt-8 border-t border-gray-200">
               <p className="text-navy font-semibold text-lg">

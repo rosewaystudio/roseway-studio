@@ -20,7 +20,7 @@ export default function ContactPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-5xl font-bold text-white mb-6">Start the Conversation</h1>
             <p className="text-xl text-white/90">
-              There's no agenda other than understanding where you are and where you're trying to go. If it feels like there's a fit, we'll talk about what that looks like. If not, we'll point you toward someone who might be a better match.
+              There's no agenda other than understanding where you are and where you're trying to go
             </p>
           </div>
         </div>
@@ -216,9 +216,9 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-bold text-navy mb-2">Schedule a Discovery Call</h3>
+                  <h3 className="text-xl font-bold text-navy mb-2">Schedule a Consultation</h3>
                   <p className="text-gray-600">
-                    Calendar scheduling coming soon. For now, please email or call to schedule your 45-minute discovery conversation.
+                    Click the link above to schedule your free45-minute consultation.
                   </p>
                 </div>
               </div>
@@ -229,7 +229,7 @@ export default function ContactPage() {
                 <ol className="space-y-5">
                   {[
                     "We'll respond within 24 hours",
-                    "Schedule a 45-minute discovery conversation",
+                    "Schedule a free 45-minute consultation - no pressure, no pitch, just a conversation",
                     "We'll listen to understand where you are, where you're going, and what's in the way",
                     "We'll share what we're hearing and recommend whether and how we can help",
                     "If there's a fit, we'll send you the Service Offering within 24 hours and propose a follow-up to discuss scope and timeline",

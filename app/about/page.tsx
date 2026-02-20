@@ -22,7 +22,7 @@ export default function AboutPage() {
       <section className="section-padding bg-white">
         <div className="container-width">
           <div className="max-w-4xl mx-auto">
-            <p className="text-xl text-gray-700 mb-6 leading-relaxed">
+            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
               Roseway Studio is a Detroit-based strategic consulting firm providing fractional COO services and digital infrastructure to early-stage founders and mission-driven organizations. We exist for founders who have the vision but need the partner to help them build the organization behind it.
             </p>
             <p className="text-gray-700 mb-6 leading-relaxed">
@@ -56,7 +56,7 @@ export default function AboutPage() {
               <p className="text-teal font-semibold text-lg">Founder, Roseway Studio</p>
             </div>
 
-            <p className="text-xl text-gray-700 mb-6 leading-relaxed">
+            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
               Andrea brings 20+ years of business operations experience from organizations including Blue Cross Blue Shield of Michigan and Rocket Mortgage, combined with an MBA from University of Detroit Mercy. She founded Roseway Studio on a single conviction: that founders deserve the same quality of strategic infrastructure as large enterprises — built around their purpose, not borrowed from a template.
             </p>
             <p className="text-gray-700 mb-10 leading-relaxed">
