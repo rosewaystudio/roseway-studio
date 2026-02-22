@@ -45,34 +45,43 @@ export default function AboutPage() {
               <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-teal shadow-lg">
                 <img
                   src="/andrea-frazier.jpeg"
-                  alt="Andrea Frazier, Founder of Roseway Studio"
+                  alt="Andrea Frazier, Founder and Chief Strategist of Roseway Studio"
                   className="w-full h-full object-cover"
                 />
               </div>
             </div>
 
             <div className="text-center mb-8">
-              <h3 className="text-3xl font-bold text-navy mb-1">Andrea Frazier</h3>
-              <p className="text-teal font-semibold text-lg">Founder, Roseway Studio</p>
+              <h3 className="text-3xl font-bold text-navy mb-1">Andrea E. Frazier</h3>
+              <p className="text-teal font-semibold text-lg">Founder & Chief Strategist, Roseway Studio</p>
             </div>
 
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Andrea brings 20+ years of business operations experience from organizations including Blue Cross Blue Shield of Michigan and Rocket Mortgage, combined with an MBA from University of Detroit Mercy. She founded Roseway Studio on a single conviction: that founders deserve the same quality of strategic infrastructure as large enterprises — built around their purpose, not borrowed from a template.
+              Andrea E. Frazier is the Founder and Chief Strategist of Roseway Studio, a Detroit-based strategic consulting firm that helps founders build the organizational infrastructure to execute their vision. She founded Roseway Studio on a single conviction: that early-stage and growth-stage founders deserve the same quality of strategic alignment as large enterprises — built around their purpose, not borrowed from a template.
+            </p>
+            <p className="text-gray-700 mb-6 leading-relaxed">
+              Andrea brings more than 30 years of operational leadership experience across three distinct chapters. She began her career co-leading Jay Gregory Enterprises, a Detroit-based woman-owned small business that operated multi-sector concession contracts at Detroit Metropolitan Wayne County Airport — managing partnerships across retail, food and beverage, and parking operations for 15 years. That experience gave her an early and deep education in the realities of running complex organizations: navigating government contracts, managing diverse partner relationships, maintaining operational performance under regulatory scrutiny, and leading through circumstances that no business plan fully anticipates.
+            </p>
+            <p className="text-gray-700 mb-6 leading-relaxed">
+              From there, Andrea spent over a decade in senior operations roles at two of Michigan's most recognized institutions — Blue Cross Blue Shield of Michigan and Rocket Mortgage — where she worked at the intersection of operational strategy, technology implementation, and organizational systems. She holds an MBA from the University of Detroit Mercy and a BBA in Accounting from the University of Michigan.
             </p>
             <p className="text-gray-700 mb-10 leading-relaxed">
-              An active member of Detroit's entrepreneurial community through TechTown and Black Tech Saturdays, Andrea works closely with post-idea, pre-functional founders to build organizational infrastructure from the ground up — the mission, decision-making frameworks, operational systems, and digital presence that transform a vision into a functioning organization.
+              At Roseway Studio, Andrea works with founders who have vision and momentum but lack the operational infrastructure to match — helping them develop mission clarity, strategic decision-making frameworks, and the digital presence that transforms an idea into a functioning organization. Her client work spans mission-driven organizations and for-profit founders alike, including A Safe Space for Men, Soulivity Media, SafetyZone Behavioral Health Urgent Care, and Building Better Men.
             </p>
 
             <div className="bg-white rounded-lg p-8 shadow-sm mb-8">
               <h3 className="text-xl font-bold text-navy mb-6">Background</h3>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
-                  "20+ years of business operations and strategic program management",
+                  "30+ years of operational leadership and strategic program management",
                   "MBA, University of Detroit Mercy",
-                  "BBA, University of Michigan",
+                  "BBA in Accounting, University of Michigan",
                   "Blue Cross Blue Shield of Michigan",
                   "Rocket Mortgage",
-                  "Active member, TechTown Detroit and Black Tech Saturdays",
+                  "Member, Michigan Black Business Alliance",
+                  "Member, Black Leaders Detroit",
+                  "Member, Small Business Association of Michigan",
+                  "Member, Black Tech Saturdays",
                   "Member, Alpha Kappa Alpha Sorority, Incorporated",
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
@@ -87,7 +96,7 @@ export default function AboutPage() {
 
             <div className="bg-teal bg-opacity-10 border-l-4 border-teal p-8">
               <p className="text-lg text-navy leading-relaxed">
-                Andrea's approach combines executive-level strategic thinking with hands-on operational and technical capability — a rare combination that allows Roseway Studio to both advise on what organizations should build and actually build it alongside them.
+                Andrea's approach combines executive-level strategic thinking with hands-on operational and technical capability — a combination that allows Roseway Studio to both define what organizations should build and build it alongside them.
               </p>
             </div>
           </div>
@@ -112,7 +121,7 @@ export default function AboutPage() {
                   summary: "Helped a founding team build organizational infrastructure from the ground up — mission and vision, strategic business plan, web presence, and ongoing fractional COO guidance.",
                 },
                 {
-                  org: "Soulivity",
+                  org: "Soulivity Media",
                   type: "Strategic Alignment Framework · Engagement in Progress",
                   summary: "Phase 1 Business Architecture Audit surfaced a foundational alignment problem across a digital media platform preparing to launch video syndication. Phases 2 and 3 in progress.",
                 },
@@ -165,7 +174,7 @@ export default function AboutPage() {
                 },
                 {
                   title: "Detroit Roots, National Reach",
-                  description: "Based in Detroit and deeply embedded in the city's entrepreneurial ecosystem through TechTown and Black Tech Saturdays. We serve mission-driven founders wherever they are.",
+                  description: "Based in Detroit and deeply embedded in the city's entrepreneurial ecosystem through the Michigan Black Business Alliance, Black Leaders Detroit, Small Business Association of Michigan, and Black Tech Saturdays. We serve mission-driven founders wherever they are.",
                 },
               ].map((value, i) => (
                 <div key={i} className="border-l-4 border-teal pl-8">
