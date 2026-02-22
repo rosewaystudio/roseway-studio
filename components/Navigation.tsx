@@ -25,7 +25,7 @@ export default function Navigation() {
             aria-label="Roseway Studio home"
           >
             <Image
-              src="/compass-rose-dark.png"
+              src="/compass-rose-dark-3.jpeg"
               alt="Roseway Studio compass rose logo"
               width={40}
               height={40}
