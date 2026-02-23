@@ -7,13 +7,13 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Roseway Studio | Strategic Digital Infrastructure for Mission-Driven Organizations",
-  description: "Detroit-based digital studio serving nonprofits and mission-driven organizations with custom websites, workspace implementation, and accessible digital infrastructure.",
-  keywords: ["nonprofit web design", "digital infrastructure", "Google Workspace", "Microsoft 365", "accessible websites", "Detroit web development"],
+  title: "Roseway Studio | From Idea to Organization",
+  description: "Detroit-based strategic consulting firm helping founders build the organizational infrastructure to execute their vision. Fractional COO guidance, strategic alignment, and digital infrastructure.",
+  keywords: ["fractional COO", "strategic consulting", "organizational infrastructure", "strategic alignment", "Detroit consulting", "founder strategy", "digital infrastructure", "nonprofit strategy"],
   authors: [{ name: "Andrea Frazier" }],
   openGraph: {
-    title: "Roseway Studio",
-    description: "Strategic digital infrastructure for mission-driven organizations",
+    title: "Roseway Studio | From Idea to Organization",
+    description: "Helping founders build the organization behind the vision — strategic alignment, fractional COO guidance, and digital infrastructure.",
     type: "website",
     locale: "en_US",
     url: "https://rosewaystudio.com",
