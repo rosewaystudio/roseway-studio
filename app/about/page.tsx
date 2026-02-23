@@ -3,7 +3,7 @@ import Button from '@/components/Button';
 
 export const metadata: Metadata = {
   title: 'About | Roseway Studio',
-  description: 'Learn about Andrea Frazier and Roseway Studio — strategic partnership and fractional COO services for early-stage founders and mission-driven organizations in Detroit and beyond.',
+  description: 'Learn about Andrea Frazier and Roseway Studio — strategic partnership and fractional COO services for founders and organizations that have outgrown what vision alone can accomplish, and need the infrastructure to match where they\'re trying to go.',
 };
 
 export default function AboutPage() {
@@ -23,13 +23,16 @@ export default function AboutPage() {
         <div className="container-width">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Roseway Studio is a Detroit-based strategic consulting firm providing fractional COO services and digital infrastructure to early-stage founders and mission-driven organizations. We exist for founders who have the vision but need the partner to help them build the organization behind it.
+              Roseway Studio is a Detroit-based strategic consulting firm providing fractional COO services and organizational infrastructure to founders and organizations that have outgrown what vision alone can accomplish, and need the infrastructure to match where they're trying to go.
+            </p>
+            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+              We exist for founders who have the vision but need the partner to help them build the organization behind it.
             </p>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Our name reflects who we are. The compass rose — our visual identity — represents strategic navigation and direction for founders who know where they want to go but need a clear path to get there. The rose family connection runs through our founder's heritage, making the name as authentic as the work.
+              Our name reflects who we are. The compass rose, our visual identity, represents strategic navigation and direction for founders who know where they want to go but need a clear path to get there.
             </p>
             <p className="text-gray-700 leading-relaxed">
-              Every engagement begins with the Strategic Alignment Framework — a structured discovery process that identifies the core purpose that should guide every decision an organization makes. From there, we work alongside founders as a fractional COO, providing ongoing strategic guidance, operational infrastructure, and digital implementation in one consistent relationship.
+              Every engagement begins with the Strategic Alignment Framework, a structured discovery process that identifies your core purpose, surfaces the gaps in organizational infrastructure, and builds a clear path forward. 
             </p>
           </div>
         </div>
@@ -166,7 +169,7 @@ export default function AboutPage() {
                 },
                 {
                   title: "Founders Deserve Enterprise-Quality Infrastructure",
-                  description: "Large organizations have COOs, strategic planners, and operational leadership. Early-stage founders often have none of that. We exist to close that gap — bringing the same quality of strategic thinking and operational rigor to founders who are building something that matters.",
+                  description: "Large organizations have COOs, strategic planners, and operational leadership built into their structure. Founders and growing organizations often navigate those same decisions without any of that support. We exist to close that gap — bringing enterprise-quality strategic thinking and operational rigor to the organizations that need it most but have historically had the least access to it.",
                 },
                 {
                   title: "Transparent Pricing",
@@ -199,12 +202,6 @@ export default function AboutPage() {
               <Button href="/contact" variant="primary">
                 Start the Conversation
               </Button>
-              <a
-                href="mailto:contact@rosewaystudio.com"
-                className="text-white hover:text-teal transition-colors font-medium"
-              >
-                or email contact@rosewaystudio.com
-              </a>
             </div>
           </div>
         </div>

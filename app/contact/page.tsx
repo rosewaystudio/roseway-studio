@@ -211,8 +211,8 @@ export default function ContactPage() {
 
                 <div>
                   <h3 className="text-xl font-bold text-navy mb-2">Location</h3>
-                  <p className="text-gray-700">Detroit, MI</p>
-                  <p className="text-gray-600">Serving founders and mission-driven organizations nationally</p>
+                  <p className="text-gray-700">Detroit, MI & Nationwide</p>
+                  <p className="text-gray-600">Serving founders and organizations that have outgrown what vision alone can accomplish, and need the infrastructure to match where they're trying to go</p>
                 </div>
 
                 <div>
@@ -229,7 +229,7 @@ export default function ContactPage() {
                 <ol className="space-y-5">
                   {[
                     "We'll respond within 24 hours",
-                    "Schedule a free 45-minute consultation - no pressure, no pitch, just a conversation",
+                    "Schedule a free 45-minute Discovery Call - no pressure, no pitch, just a conversation",
                     "We'll listen to understand where you are, where you're going, and what's in the way",
                     "We'll share what we're hearing and recommend whether and how we can help",
                     "If there's a fit, we'll send you the Service Offering within 24 hours and propose a follow-up to discuss scope and timeline",

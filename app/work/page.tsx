@@ -22,13 +22,13 @@ export default function WorkPage() {
       </section>
 
       {/* ─── SECTION 1: STRATEGIC ALIGNMENT WORK ─── */}
-      <section className="bg-teal-dark bg-opacity-90 py-10">
+      <section className="bg-teal bg-opacity-90 py-10">
         <div className="container-width">
           <div className="max-w-4xl mx-auto">
             <p className="text-white text-sm font-semibold uppercase tracking-widest mb-2">Section 01</p>
             <h2 className="text-3xl font-bold text-navy mb-3">Strategic Alignment Work</h2>
             <p className="text-white text-lg leading-relaxed">
-              Engagements that begin with the Strategic Alignment Framework — surfacing the gaps between where an organization says it stands and how it actually operates, then building the infrastructure to close them.
+              Engagements that begin with the Strategic Alignment Framework, surfacing the gaps between where an organization says it stands and how it actually operates, then building the infrastructure to close them.
             </p>
           </div>
         </div>
@@ -181,7 +181,7 @@ export default function WorkPage() {
       </section>
 
       {/* ─── SECTION 2: DIGITAL INFRASTRUCTURE WORK ─── */}
-      <section className="bg-teal-dark bg-opacity-90 py-10">
+      <section className="bg-teal bg-opacity-90 py-10">
         <div className="container-width">
           <div className="max-w-4xl mx-auto">
             <p className="text-white text-sm font-semibold uppercase tracking-widest mb-2">Section 02</p>
@@ -313,12 +313,6 @@ export default function WorkPage() {
               <Button href="/contact" variant="primary">
                 Start the Conversation
               </Button>
-              <a
-                href="mailto:contact@rosewaystudio.com"
-                className="text-white hover:text-teal transition-colors font-medium"
-              >
-                or email contact@rosewaystudio.com
-              </a>
             </div>
           </div>
         </div>

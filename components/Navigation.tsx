@@ -53,7 +53,7 @@ export default function Navigation() {
               rel="noopener noreferrer"
               className="bg-teal text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-dark transition-colors"
             >
-              Schedule Consultation
+              Schedule Your Discovery Call
             </a>
           </div>
 
@@ -96,7 +96,7 @@ export default function Navigation() {
                 onClick={() => setMobileMenuOpen(false)}
                 className="bg-teal text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-dark transition-colors text-center"
               >
-                Schedule Consultation
+                Schedule Your Discovery Call
               </a>
             </div>
           </div>

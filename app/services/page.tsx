@@ -3,7 +3,7 @@ import Button from '@/components/Button';
 
 export const metadata: Metadata = {
   title: 'Services | Roseway Studio',
-  description: 'Strategic partnership, fractional COO guidance, and digital infrastructure for early-stage founders and mission-driven organizations.',
+  description: 'Strategic partnership, fractional COO guidance, and digital infrastructure for founders and organizations that have outgrown what vision alone can accomplish, and need the infrastructure to match where they\'re trying to go.',
 };
 
 export default function ServicesPage() {
@@ -18,8 +18,48 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Service 01 — Mission Focus Framework */}
+      {/* Discovery Call */}
       <section className="section-padding bg-white">
+        <div className="container-width">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-start gap-6 mb-8">
+              <span className="text-teal font-bold text-lg">00</span>
+              <div>
+                <h2 className="text-4xl font-bold text-navy mb-2">Discovery Call</h2>
+                <p className="text-xl text-gray-600 italic">Before we begin</p>
+              </div>
+            </div>
+
+            <p className="text-gray-700 text-lg mb-8 leading-relaxed">
+              A conversation before a commitment. Before any engagement begins, we spend 45 minutes understanding where you are, where you're trying to go, and what's standing between those two things. If there's a fit, we'll tell you exactly what that looks like and what it costs. If there isn't, we'll point you toward someone who might serve you better.
+            </p>
+
+            <p className="text-gray-700 text-lg mb-8 leading-relaxed italic">
+              This is not a sales call. It's a diagnostic conversation — and it's the foundation every Roseway Studio engagement is built on.
+            </p>
+
+            <div className="bg-teal bg-opacity-10 border-l-4 border-teal p-8">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                <div>
+                  <p className="text-2xl font-bold text-navy mb-1">Complimentary</p>
+                  <p className="text-gray-600">45 minutes · Limited availability</p>
+                </div>
+                <a
+                  href="https://calendar.app.google/cJjLJ9wEnnHzJVN2A"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-teal text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-dark transition-colors text-center whitespace-nowrap"
+                >
+                  Schedule Your Discovery Call
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Service 01 — Strategic Alignment Framework */}
+      <section className="section-padding bg-gray-50">
         <div className="container-width">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-start gap-6 mb-8">
@@ -52,7 +92,7 @@ export default function ServicesPage() {
                   description: "A clear, actionable picture of what to keep, what to eliminate, and what to change — and in what order",
                 },
               ].map((phase, i) => (
-                <div key={i} className="bg-gray-50 rounded-lg p-6 border-t-4 border-teal">
+                <div key={i} className="bg-white rounded-lg p-6 border-t-4 border-teal">
                   <p className="text-teal text-sm font-semibold uppercase tracking-wide mb-2">{phase.phase}</p>
                   <h3 className="text-lg font-bold text-navy mb-3">{phase.title}</h3>
                   <p className="text-gray-600 text-sm">{phase.description}</p>
@@ -77,14 +117,14 @@ export default function ServicesPage() {
       </section>
 
       {/* Service 02 — Strategic Partnership Retainer */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-white">
         <div className="container-width">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-start gap-6 mb-8">
               <span className="text-teal font-bold text-lg">02</span>
               <div>
                 <h2 className="text-4xl font-bold text-navy mb-2">Strategic Partnership Retainer</h2>
-                <p className="text-xl text-gray-600 italic">For founders ready to build</p>
+                <p className="text-xl text-gray-600 italic">For organizations ready for a consistent, strategic partnership</p>
               </div>
             </div>
 
@@ -124,14 +164,14 @@ export default function ServicesPage() {
       </section>
 
       {/* Service 03 — Standalone Technology Projects */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-gray-50">
         <div className="container-width">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-start gap-6 mb-8">
               <span className="text-teal font-bold text-lg">03</span>
               <div>
                 <h2 className="text-4xl font-bold text-navy mb-2">Standalone Technology Projects</h2>
-                <p className="text-xl text-gray-600 italic">For founders with a specific, defined need</p>
+                <p className="text-xl text-gray-600 italic">For organizations with a specific, defined need</p>
               </div>
             </div>
 
@@ -154,7 +194,7 @@ export default function ServicesPage() {
                   description: "Domain management, email deliverability, security configuration, and technical troubleshooting",
                 },
               ].map((item, i) => (
-                <div key={i} className="bg-gray-50 rounded-lg p-6">
+                <div key={i} className="bg-white rounded-lg p-6">
                   <h3 className="text-lg font-bold text-navy mb-3">{item.title}</h3>
                   <p className="text-gray-600 text-sm">{item.description}</p>
                 </div>
@@ -164,7 +204,7 @@ export default function ServicesPage() {
             <div className="bg-teal bg-opacity-10 border-l-4 border-teal p-8">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                 <div>
-                  <p className="text-2xl font-bold text-navy mb-1">From $2,500</p>
+                  <p className="text-2xl font-bold text-navy mb-1">From $1,500</p>
                   <p className="text-gray-600">Scoped individually · Deliverable-based pricing</p>
                 </div>
                 <Button href="/contact">Get a Proposal</Button>
@@ -194,6 +234,12 @@ export default function ServicesPage() {
                 <tbody>
                   {[
                     {
+                      name: "Discovery Call",
+                      sub: "45 minutes · Limited availability",
+                      price: "Complimentary",
+                      includes: "Diagnostic conversation · Fit assessment · Clear next step — every time",
+                    },
+                    {
                       name: "Strategic Alignment Framework",
                       sub: "45-day engagement",
                       price: "$2,500–$3,500",
@@ -208,7 +254,7 @@ export default function ServicesPage() {
                     {
                       name: "Standalone Technology Project",
                       sub: "Scoped individually",
-                      price: "From $2,500",
+                      price: "From $1,500",
                       includes: "Website design/dev · Workspace setup · Digital infrastructure · Defined deliverables",
                     },
                   ].map((row, i) => (
@@ -240,9 +286,14 @@ export default function ServicesPage() {
               Start with a discovery conversation. We'll spend 45 minutes understanding where you are, where you're going, and whether the Strategic Alignment Framework is the right next step.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button href="/contact" variant="primary">
+              <a
+                href="https://calendar.app.google/cJjLJ9wEnnHzJVN2A"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-teal text-white px-8 py-4 rounded-lg font-semibold hover:bg-teal-dark transition-colors"
+              >
                 Start the Conversation
-              </Button>
+              </a>
               <a
                 href="mailto:contact@rosewaystudio.com"
                 className="text-white hover:text-teal transition-colors font-medium"

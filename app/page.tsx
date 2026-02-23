@@ -27,7 +27,7 @@ export default function Home() {
               Most founders don't have a technology problem.
             </p>
             <p className="text-xl text-gray-700 leading-relaxed">
-              They have a <strong>presence, alignment, and communication problem.</strong> The right technology—built on a clear strategic foundation—is how you solve it.
+              They have a <strong>presence, alignment, and communication problem.</strong> The right technology, built on a clear strategic foundation, is how you solve it.
             </p>
           </div>
         </div>
@@ -63,7 +63,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold text-navy mb-4 text-center">How We Work</h2>
             <p className="text-xl text-gray-600 text-center mb-12">
-              Every engagement begins with the Strategic Alignment Framework — a structured discovery process that surfaces the gap between where you are and where you're trying to go.
+              Every engagement begins with the Strategic Alignment Framework, a structured discovery process that surfaces the gap between where you are and where you're trying to go.
             </p>
             <div className="grid md:grid-cols-3 gap-8">
               {[
@@ -191,12 +191,6 @@ export default function Home() {
               <Button href="/contact" variant="primary">
                 Start the Conversation
               </Button>
-              <a
-                href="mailto:contact@rosewaystudio.com"
-                className="text-white hover:text-teal transition-colors font-medium"
-              >
-                or email contact@rosewaystudio.com
-              </a>
             </div>
           </div>
         </div>
