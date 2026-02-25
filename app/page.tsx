@@ -7,8 +7,8 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <Hero
-        title="From Idea to Organization"
-        subtitle="Building the organization behind the Vision"
+        title="You built something real."
+        subtitle="Now build the organization behind it."
         primaryCTA={{
           text: "Start the Conversation",
           href: "/contact"
@@ -22,12 +22,21 @@ export default function Home() {
       {/* Positioning Statement */}
       <section className="section-padding bg-white">
         <div className="container-width">
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="text-2xl text-navy font-semibold leading-relaxed mb-6">
-              Most founders don't have a technology problem.
+          <div className="max-w-3xl mx-auto text-justify">
+            <p className="text-xl text-gray-700 leading-relaxed mb-5">
+              Most organizations don&apos;t fail because the vision was wrong. They fail because nobody built the infrastructure to carry it. The founder burns out holding everything together by instinct. The team moves in five directions. The digital presence says something different than what the organization actually does. And a mission that could have changed something quietly runs out of runway.
             </p>
-            <p className="text-xl text-gray-700 leading-relaxed">
-              They have a <strong>presence, alignment, and communication problem.</strong> The right technology, built on a clear strategic foundation, is how you solve it.
+            <p className="text-xl text-gray-700 leading-relaxed mb-5">
+              We are in a moment that is asking a lot of Black founders and community-led organizations. Build something. Sustain it. Grow it. Do it without the networks, the capital access, or the institutional infrastructure that others take for granted.
+            </p>
+            <p className="text-xl text-gray-700 leading-relaxed mb-5">
+              Roseway Studio was built for this moment. We partner with founders who have launched something real and are ready to build the organization behind it &mdash; the decision-making frameworks, the operational clarity, the presence that tells the world exactly what you stand for and who you serve.
+            </p>
+            <p className="text-xl font-semibold text-navy leading-relaxed mb-4">
+              One conviction: that the organizations doing the most important work deserve the same quality of infrastructure as anyone else.
+            </p>
+            <p className="text-xl font-semibold text-teal leading-relaxed">
+              Detroit-rooted. Community-committed. Built for the work that actually needs to be done.
             </p>
           </div>
         </div>
@@ -36,23 +45,14 @@ export default function Home() {
       {/* Who We Serve */}
       <section className="section-padding bg-navy text-white">
         <div className="container-width">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-white mb-10 text-center">Who We Serve</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              {[
-                "Founders with vision and momentum but no operational infrastructure to match",
-                "Post-idea, pre-functional leaders who are starting to realize vision alone won't get them there",
-                "Organizations that feel disconnected from how they show up digitally",
-                "Leaders who need a trusted partner, not another vendor",
-              ].map((item, i) => (
-                <div key={i} className="flex items-start gap-4 bg-white rounded-lg p-6 shadow-sm">
-                  <svg className="w-6 h-6 text-teal flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <p className="text-gray-700">{item}</p>
-                </div>
-              ))}
-            </div>
+          <div className="max-w-3xl mx-auto text-justify">
+            <h2 className="text-4xl font-bold text-white mb-8 text-center">Who We Serve</h2>
+            <p className="text-xl text-gray-200 leading-relaxed mb-6">
+              We work with founders and organization leaders who have vision and momentum but lack the operational infrastructure to match. Leaders who have already launched something real &mdash; a program, an organization, a mission &mdash; and are starting to feel the weight of running it without the systems, clarity, or presence to sustain it.
+            </p>
+            <p className="text-xl font-semibold text-teal leading-relaxed">
+              If you are doing everything and not seeing your expected results, that is the conversation Roseway Studio was built for.
+            </p>
           </div>
         </div>
       </section>
@@ -62,8 +62,8 @@ export default function Home() {
         <div className="container-width">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold text-navy mb-4 text-center">How We Work</h2>
-            <p className="text-xl text-gray-600 text-center mb-12">
-              Every engagement begins with the Strategic Alignment Framework, a structured discovery process that surfaces the gap between where you are and where you're trying to go.
+            <p className="text-xl text-gray-600 text-justify mb-12">
+              Every engagement begins with the Strategic Alignment Framework, a structured discovery process that surfaces the gap between where you are and where you&apos;re trying to go.
             </p>
             <div className="grid md:grid-cols-3 gap-8">
               {[
@@ -124,13 +124,12 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <p className="text-gray-600 text-center mt-10 text-lg">
+            <p className="text-gray-600 text-justify mt-10 text-xl">
               After the Framework, most founders continue as ongoing strategic partners — with Roseway Studio providing fractional COO-level guidance alongside digital implementation. One relationship. One point of contact. Strategy and execution together.
             </p>
           </div>
         </div>
       </section>
-
 
       {/* Case Study */}
       <section className="section-padding bg-gray-100">
@@ -145,7 +144,7 @@ export default function Home() {
               </p>
 
               <blockquote className="border-l-4 border-teal pl-6 mb-8 text-gray-700 text-lg leading-relaxed">
-                "Roseway Studio has been an invaluable partner to us. From collaboration on our strategic direction and implementation of our technical infrastructure to the custom design and development of our website. Through our ongoing partnership with Roseway, we have been able to establish a professional presence to support our mission to expand mental health awareness, education and resources for men in the Detroit, MI area and beyond."
+                &ldquo;Roseway Studio has been an invaluable partner to us. From collaboration on our strategic direction and implementation of our technical infrastructure to the custom design and development of our website. Through our ongoing partnership with Roseway, we have been able to establish a professional presence to support our mission to expand mental health awareness, education and resources for men in the Detroit, MI area and beyond.&rdquo;
               </blockquote>
 
               <div className="bg-gray-50 rounded-lg p-6 mb-8">
@@ -170,7 +169,7 @@ export default function Home() {
               </div>
 
               <p className="text-navy font-semibold text-lg">
-                They didn't need someone to build them a website. They needed a partner to help them become an organization. That's what Roseway Studio does.
+                They didn&apos;t need someone to build them a website. They needed a partner to help them become an organization. That&apos;s what Roseway Studio does.
               </p>
             </div>
           </div>
@@ -178,14 +177,14 @@ export default function Home() {
       </section>
 
       {/* Final CTA */}
-      <section className="bg-navy text-white section-padding">
+      <section className="bg-white text-white section-padding">
         <div className="container-width">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-6 text-white">
+            <h2 className="text-4xl font-bold text-center mb-6 text-navy">
               Ready to build something that lasts?
             </h2>
-            <p className="text-xl text-gray-200 mb-8">
-              Start with a discovery conversation. We'll spend 45 minutes understanding where you are, where you're going, and whether the Strategic Alignment Framework is the right next step.
+            <p className="text-xl text-justify text-gray-700 mb-8">
+              Start with a discovery conversation. We&apos;ll spend 45 minutes understanding where you are, where you&apos;re going, and whether the Strategic Alignment Framework is the right next step.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button href="/contact" variant="primary">
