@@ -62,7 +62,7 @@ export default function Home() {
         <div className="container-width">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold text-navy mb-4 text-center">How We Work</h2>
-            <p className="text-xl text-gray-600 text-justify mb-12">
+            <p className="text-xl text-gray-600 text-center mb-12">
               Every engagement begins with the Strategic Alignment Framework, a structured discovery process that surfaces the gap between where you are and where you&apos;re trying to go.
             </p>
             <div className="grid md:grid-cols-3 gap-8">
@@ -124,7 +124,7 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <p className="text-gray-600 text-justify mt-10 text-xl">
+            <p className="text-gray-600 text-center mt-10 text-xl">
               After the Framework, most founders continue as ongoing strategic partners — with Roseway Studio providing fractional COO-level guidance alongside digital implementation. One relationship. One point of contact. Strategy and execution together.
             </p>
           </div>
@@ -177,13 +177,13 @@ export default function Home() {
       </section>
 
       {/* Final CTA */}
-      <section className="bg-white text-white section-padding">
+      <section className="bg-white section-padding">
         <div className="container-width">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-4xl font-bold text-center mb-6 text-navy">
               Ready to build something that lasts?
             </h2>
-            <p className="text-xl text-justify text-gray-700 mb-8">
+            <p className="text-xl text-center text-gray-700 mb-8">
               Start with a discovery conversation. We&apos;ll spend 45 minutes understanding where you are, where you&apos;re going, and whether the Strategic Alignment Framework is the right next step.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

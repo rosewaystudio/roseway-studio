@@ -22,16 +22,16 @@ export default function AboutPage() {
       <section className="section-padding bg-white">
         <div className="container-width">
           <div className="max-w-4xl mx-auto">
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            <p className="text-lg text-gray-700 mb-6 text-justify">
               Roseway Studio is a Detroit-based strategic consulting firm providing fractional COO services and organizational infrastructure to founders and organizations that have outgrown what vision alone can accomplish, and need the infrastructure to match where they're trying to go.
             </p>
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            <p className="text-lg text-gray-700 mb-6 text-justify">
               We exist for founders who have the vision but need the partner to help them build the organization behind it.
             </p>
-            <p className="text-gray-700 mb-6 leading-relaxed">
+            <p className="text-gray-700 mb-6 text-justify">
               Our name reflects who we are. The compass rose, our visual identity, represents strategic navigation and direction for founders who know where they want to go but need a clear path to get there.
             </p>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-gray-700 text-justify">
               Every engagement begins with the Strategic Alignment Framework, a structured discovery process that identifies your core purpose, surfaces the gaps in organizational infrastructure, and builds a clear path forward. 
             </p>
           </div>
@@ -59,17 +59,17 @@ export default function AboutPage() {
               <p className="text-teal font-semibold text-lg">Founder & Chief Strategist, Roseway Studio</p>
             </div>
 
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Andrea E. Frazier is the Founder and Chief Strategist of Roseway Studio, a Detroit-based strategic consulting firm that helps founders build the organizational infrastructure to execute their vision. She founded Roseway Studio on a single conviction: that early-stage and growth-stage founders deserve the same quality of strategic alignment as large enterprises — built around their purpose, not borrowed from a template.
+            <p className="text-lg text-gray-700 mb-6 text-justify">
+              Andrea E. Frazier is the Founder and Chief Strategist of Roseway Studio, a Detroit-based strategic consulting firm that helps founders build the organizational infrastructure to execute their vision. She founded Roseway Studio on a single conviction: that the organizations doing the most important work deserve the same quality of strategic infrastructure as anyone else — built around their purpose, not borrowed from a template.
             </p>
-            <p className="text-gray-700 mb-6 leading-relaxed">
-              Andrea brings more than 30 years of operational leadership experience across three distinct chapters. She began her career co-leading Jay Gregory Enterprises, a Detroit-based woman-owned small business that operated multi-sector concession contracts at Detroit Metropolitan Wayne County Airport — managing partnerships across retail, food and beverage, and parking operations for 15 years. That experience gave her an early and deep education in the realities of running complex organizations: navigating government contracts, managing diverse partner relationships, maintaining operational performance under regulatory scrutiny, and leading through circumstances that no business plan fully anticipates.
+            <p className="text-gray-700 mb-6 text-justify">
+              Andrea brings more than 30 years of operational leadership experience across three distinct chapters. She began her career co-leading Jay Gregory Enterprises, a Detroit-based woman-owned small business that operated multi-sector concession contracts at Detroit Metropolitan Wayne County Airport, managing partnerships across retail, food and beverage, and parking operations for 15 years. That experience gave her an early and deep education in the realities of running complex organizations: navigating government contracts, managing diverse partner relationships, maintaining operational performance under regulatory scrutiny, and leading through circumstances that no business plan fully anticipates.
             </p>
-            <p className="text-gray-700 mb-6 leading-relaxed">
-              From there, Andrea spent over a decade in senior operations roles at two of Michigan's most recognized institutions — Blue Cross Blue Shield of Michigan and Rocket Mortgage — where she worked at the intersection of operational strategy, technology implementation, and organizational systems. She holds an MBA from the University of Detroit Mercy and a BBA in Accounting from the University of Michigan.
+            <p className="text-gray-700 mb-6 text-justify">
+              From there, Andrea spent close to a decade in operations roles at two of Michigan’s most recognized institutions, Blue Cross Blue Shield of Michigan and Rocket Mortgage, where she worked at the intersection of operational strategy, technology implementation, and organizational systems. She holds an MBA from the University of Detroit Mercy and a BBA in Accounting from the University of Michigan.
             </p>
-            <p className="text-gray-700 mb-10 leading-relaxed">
-              At Roseway Studio, Andrea works with founders who have vision and momentum but lack the operational infrastructure to match — helping them develop mission clarity, strategic decision-making frameworks, and the digital presence that transforms an idea into a functioning organization. Her client work spans mission-driven organizations and for-profit founders alike, including A Safe Space for Men, Soulivity Media, SafetyZone Behavioral Health Urgent Care, and Building Better Men.
+            <p className="text-gray-700 mb-10 text-justify">
+              At Roseway Studio, Andrea works with founders and organizations who have launched something real and are ready to build the infrastructure behind it — helping them develop mission clarity, strategic decision-making frameworks, and the presence that tells the world exactly what they stand for and who they serve. Her client work spans mission-driven organizations and for-profit founders alike, including A Safe Space for Men, Soulivity Media, SafetyZone Behavioral Health Urgent Care, Building Better Men, and the Male Responsibility Institute.
             </p>
 
             <div className="bg-white rounded-lg p-8 shadow-sm mb-8">
@@ -77,14 +77,14 @@ export default function AboutPage() {
               <div className="grid md:grid-cols-2 gap-4">
                 {[
                   "30+ years of operational leadership and strategic program management",
-                  "MBA, University of Detroit Mercy",
-                  "BBA in Accounting, University of Michigan",
-                  "Blue Cross Blue Shield of Michigan",
-                  "Rocket Mortgage",
                   "Member, Michigan Black Business Alliance",
+                  "MBA, University of Detroit Mercy",
                   "Member, Black Leaders Detroit",
+                  "BBA in Accounting, University of Michigan",
                   "Member, Small Business Association of Michigan",
+                  "Blue Cross Blue Shield of Michigan",
                   "Member, Black Tech Saturdays",
+                  "Rocket Mortgage",
                   "Member, Alpha Kappa Alpha Sorority, Incorporated",
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
@@ -98,8 +98,8 @@ export default function AboutPage() {
             </div>
 
             <div className="bg-teal bg-opacity-10 border-l-4 border-teal p-8">
-              <p className="text-lg text-navy leading-relaxed">
-                Andrea's approach combines executive-level strategic thinking with hands-on operational and technical capability — a combination that allows Roseway Studio to both define what organizations should build and build it alongside them.
+              <p className="text-lg text-navy text-justify">
+                Andrea’s approach combines executive-level strategic thinking with hands-on operational and technical capability,a combination that allows Roseway Studio to both define what organizations should build and build it alongside them.
               </p>
             </div>
           </div>
@@ -158,7 +158,7 @@ export default function AboutPage() {
       {/* Our Values */}
       <section className="section-padding bg-gray-100">
         <div className="container-width">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto text-justify">
             <h2 className="text-4xl font-bold text-navy mb-12 text-center">How We Work</h2>
 
             <div className="space-y-8">
@@ -191,11 +191,11 @@ export default function AboutPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="section-padding bg-navy text-white">
+      <section className="bg-white section-padding">
         <div className="container-width">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-6 text-white">Let's Work Together</h2>
-            <p className="text-xl text-gray-200 mb-8">
+            <h2 className="text-4xl font-bold text-center mb-6 text-navy">Let's Work Together</h2>
+            <p className="text-xl text-gray-700 mb-8">
               Whether you're starting from an idea or scaling an existing organization, we'd love to talk about whether Roseway Studio is the right strategic partner for where you're going.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
