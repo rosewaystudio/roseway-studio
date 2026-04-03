@@ -90,7 +90,7 @@ export default function Navigation() {
                   {link.label}
                 </Link>
               ))}
-              <a href="https://calendar.app.google/cJjLJ9wEnnHzJVN2A"
+              <a href="https://calendly.com/andrea-rosewaystudio/discovery_call"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}
