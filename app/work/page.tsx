@@ -14,9 +14,9 @@ export default function WorkPage() {
         <div className="container-width">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-5xl font-bold text-white mb-6">Our Work</h1>
-            <p className="text-xl text-white mb-8">
-              Every engagement is different. What stays constant is the approach: understand the mission, surface the gaps, build the infrastructure that closes them.
-            </p>
+              <p className="text-xl text-white/90">
+                Every engagement is different. What stays constant is the approach.
+              </p>
           </div>
         </div>
       </section>
