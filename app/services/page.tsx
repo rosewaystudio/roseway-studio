@@ -13,7 +13,7 @@ export default function ServicesPage() {
       <section className="bg-navy py-16">
         <div className="container-width">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-5xl font-bold text-white mb-6">How We Work Together</h1>
+            <h1 className="text-5xl font-bold text-white mb-6">Our Services</h1>
           </div>
         </div>
       </section>

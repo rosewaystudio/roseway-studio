@@ -14,7 +14,7 @@ export default function Home() {
           href: "/contact"
         }}
         secondaryCTA={{
-          text: "See How We Work",
+          text: "Explore Our Services",
           href: "/services"
         }}
       />
@@ -61,7 +61,7 @@ export default function Home() {
       <section className="section-padding bg-white">
         <div className="container-width">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-navy mb-4 text-center">How We Work</h2>
+            <h2 className="text-4xl font-bold text-navy mb-4 text-center">The Approach</h2>
             <p className="text-xl text-gray-600 text-center mb-12">
               Every engagement begins with the Strategic Alignment Framework, a structured discovery process that surfaces the gap between where you are and where you&apos;re trying to go.
             </p>
