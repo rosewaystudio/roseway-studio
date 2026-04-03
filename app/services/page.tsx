@@ -217,6 +217,60 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Service 04 — Technology Advisory Services */}
+      <section className="section-padding bg-white">
+        <div className="container-width">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-start gap-6 mb-8">
+              <span className="text-teal font-bold text-lg">04</span>
+              <div>
+                <h2 className="text-4xl font-bold text-navy mb-2">Technology Advisory Services</h2>
+                <p className="text-xl text-gray-600 italic">For founders who need expert guidance before they build</p>
+              </div>
+            </div>
+
+            <p className="text-gray-700 text-lg mb-8 leading-relaxed">
+              A focused working session designed for founders who have a specific technology decision in front of them — a platform to evaluate, a tool to choose, a digital infrastructure question that needs a clear answer before moving forward. You bring the question. We bring the framework to work through it.
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-6 mb-10">
+              {[
+                {
+                  title: "Platform & Tool Selection",
+                  description: "Evaluate your options against your actual operational needs — not the features you'll never use",
+                },
+                {
+                  title: "Technology Roadmap Review",
+                  description: "Assess whether your current digital infrastructure supports where you're trying to go",
+                },
+                {
+                  title: "Pre-Project Scoping",
+                  description: "Define the right scope, sequence, and requirements before committing to a build",
+                },
+              ].map((item, i) => (
+                <div key={i} className="bg-gray-50 rounded-lg p-6">
+                  <h3 className="text-lg font-bold text-navy mb-3">{item.title}</h3>
+                  <p className="text-gray-600 text-sm">{item.description}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="bg-teal bg-opacity-10 border-l-4 border-teal p-8">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                <div>
+                  <p className="text-2xl font-bold text-navy mb-1">$500–$750</p>
+                  <p className="text-gray-600">90-minute working session · Advisory fee applies toward project investment if you proceed</p>
+                </div>
+                <Button href="/contact">Book a Session</Button>
+              </div>
+              <p className="text-gray-600 mt-4 italic text-sm">
+                Technology Advisory Sessions are ideal for founders evaluating a significant technology investment who want expert input before committing to a scope.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Investment Summary Table */}
       <section className="section-padding bg-gray-100">
         <div className="container-width">
@@ -256,6 +310,12 @@ export default function ServicesPage() {
                       sub: "Scoped individually",
                       price: "From $1,500",
                       includes: "Website design/dev · Workspace setup · Digital infrastructure · Defined deliverables",
+                    },
+                    {
+                      name: "Technology Advisory Session",
+                      sub: "90-minute working session",
+                      price: "$500–$750",
+                      includes: "Platform evaluation · Technology roadmap review · Pre-project scoping · Fee applies toward project if you proceed",
                     },
                   ].map((row, i) => (
                     <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>

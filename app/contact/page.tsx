@@ -1,19 +1,23 @@
-import { Metadata } from 'next';
+'use client';
 
-export const metadata: Metadata = {
-  title: 'Contact | Roseway Studio',
-  description: 'Start a discovery conversation with Roseway Studio. We\'ll spend 45 minutes understanding where you are, where you\'re going, and whether the Strategic Alignment Framework is the right next step.',
-};
+import { Metadata } from 'next';
+import { useState } from 'react';
 
 export default function ContactPage() {
+  const [budget, setBudget] = useState('');
+  const [submitted, setSubmitted] = useState(false);
+
+  const isUnqualified = budget === 'under-1000';
+
   return (
     <>
       {/* Success Message */}
-        {typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('success') === 'true' && (
-          <div className="bg-teal text-white py-4 text-center">
-            <p className="text-lg font-semibold">Thank you! We'll be in touch within 24 hours.</p>
-          </div>
-        )}
+      {submitted && (
+        <div className="bg-teal text-white py-4 text-center">
+          <p className="text-lg font-semibold">Thank you! We'll be in touch within 24 hours.</p>
+        </div>
+      )}
+
       {/* Page Header */}
       <section className="bg-navy py-16">
         <div className="container-width">
@@ -30,28 +34,21 @@ export default function ContactPage() {
       <section className="section-padding bg-white">
         <div className="container-width">
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+
             {/* Contact Form */}
             <div>
               <h2 className="text-3xl font-bold text-navy mb-6">Tell Us About Where You Are</h2>
 
-              <form 
+              <form
                 action="https://api.web3forms.com/submit"
                 method="POST"
                 className="space-y-6"
+                onSubmit={() => setSubmitted(true)}
               >
-                {/* Web3Forms Access Key - REPLACE WITH YOUR ACTUAL KEY */}
                 <input type="hidden" name="access_key" value={process.env.NEXT_PUBLIC_WEB3FORMS_KEY} />
-                
-                {/* Redirect after submission */}
                 <input type="hidden" name="redirect" value="https://rosewaystudio.com/contact?success=true" />
-                
-                {/* Subject line for email */}
                 <input type="hidden" name="subject" value="New Contact Form Submission from Roseway Studio Website" />
-                
-                {/* From name */}
                 <input type="hidden" name="from_name" value="Roseway Studio Website" />
-
-                {/* Honeypot for spam protection */}
                 <input type="checkbox" name="botcheck" className="hidden" />
 
                 {/* Name */}
@@ -64,6 +61,7 @@ export default function ContactPage() {
                     id="name"
                     name="name"
                     required
+                    placeholder="Your full name"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent"
                   />
                 </div>
@@ -78,6 +76,7 @@ export default function ContactPage() {
                     id="email"
                     name="email"
                     required
+                    placeholder="your@email.com"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent"
                   />
                 </div>
@@ -85,84 +84,126 @@ export default function ContactPage() {
                 {/* Organization Name */}
                 <div>
                   <label htmlFor="organization" className="block text-navy font-semibold mb-2">
-                    Organization Name *
+                    Organization or Business Name *
                   </label>
                   <input
                     type="text"
                     id="organization"
                     name="organization"
                     required
+                    placeholder="Your organization or business name"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent"
                   />
                 </div>
 
-                {/* Organization Type */}
+                {/* How did you hear */}
                 <div>
-                  <label htmlFor="organizationType" className="block text-navy font-semibold mb-2">
-                    Organization Type
+                  <label htmlFor="referralSource" className="block text-navy font-semibold mb-2">
+                    How did you hear about Roseway Studio?
                   </label>
                   <select
-                    id="organizationType"
-                    name="organizationType"
+                    id="referralSource"
+                    name="referralSource"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent"
                   >
                     <option value="">Select one...</option>
-                    <option value="nonprofit-501c3">Nonprofit 501(c)(3)</option>
-                    <option value="social-enterprise">Social Enterprise</option>
-                    <option value="for-profit-mission">For-Profit Mission-Driven</option>
-                    <option value="other">Other</option>
+                    <option value="Referral">Referral</option>
+                    <option value="LinkedIn">LinkedIn</option>
+                    <option value="Black Tech Saturdays">Black Tech Saturdays</option>
+                    <option value="TechTown Detroit">TechTown Detroit</option>
+                    <option value="Google Search">Google Search</option>
+                    <option value="Other">Other</option>
                   </select>
                 </div>
 
-                {/* Project Type */}
+                {/* Current Situation */}
+                <div>
+                  <label htmlFor="situation" className="block text-navy font-semibold mb-2">
+                    What best describes your current situation? *
+                  </label>
+                  <select
+                    id="situation"
+                    name="situation"
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent"
+                  >
+                    <option value="">Select one...</option>
+                    <option value="I have a vision and need help building the organization behind it">
+                      I have a vision and need help building the organization behind it
+                    </option>
+                    <option value="I have a website or technology need">
+                      I have a website or technology need
+                    </option>
+                    <option value="I'm not sure yet — I need a conversation">
+                      I'm not sure yet — I need a conversation
+                    </option>
+                  </select>
+                </div>
+
+                {/* Engagement Type */}
                 <div>
                   <label className="block text-navy font-semibold mb-2">
-                    Project Type (select all that apply)
+                    What type of engagement are you exploring? (select all that apply)
                   </label>
                   <div className="space-y-2">
-                    <label className="flex items-center gap-2">
-                      <input
-                        type="checkbox"
-                        name="projectType"
-                        value="Website Design & Development"
-                        className="w-5 h-5 text-teal border-gray-300 rounded focus:ring-teal"
-                      />
-                      <span className="text-gray-700">Website Design & Development</span>
-                    </label>
-                    <label className="flex items-center gap-2">
-                      <input
-                        type="checkbox"
-                        name="projectType"
-                        value="Workspace Implementation"
-                        className="w-5 h-5 text-teal border-gray-300 rounded focus:ring-teal"
-                      />
-                      <span className="text-gray-700">Workspace Implementation</span>
-                    </label>
-                    <label className="flex items-center gap-2">
-                      <input
-                        type="checkbox"
-                        name="projectType"
-                        value="Digital Infrastructure"
-                        className="w-5 h-5 text-teal border-gray-300 rounded focus:ring-teal"
-                      />
-                      <span className="text-gray-700">Digital Infrastructure</span>
-                    </label>
-                    <label className="flex items-center gap-2">
-                      <input
-                        type="checkbox"
-                        name="projectType"
-                        value="Not Sure - Need Consultation"
-                        className="w-5 h-5 text-teal border-gray-300 rounded focus:ring-teal"
-                      />
-                      <span className="text-gray-700">Not Sure - Need Consultation</span>
-                    </label>
+                    {[
+                      'Strategic Alignment Framework',
+                      'Strategic Partnership Retainer',
+                      'Website Design & Development',
+                      'Workspace Implementation',
+                      'Not Sure — Need Consultation',
+                    ].map((option) => (
+                      <label key={option} className="flex items-center gap-2">
+                        <input
+                          type="checkbox"
+                          name="engagementType"
+                          value={option}
+                          className="w-5 h-5 text-teal border-gray-300 rounded focus:ring-teal"
+                        />
+                        <span className="text-gray-700">{option}</span>
+                      </label>
+                    ))}
                   </div>
+                </div>
+
+                {/* Budget */}
+                <div>
+                  <label htmlFor="budget" className="block text-navy font-semibold mb-2">
+                    What is your approximate budget for this project? *
+                  </label>
+                  <select
+                    id="budget"
+                    name="budget"
+                    required
+                    value={budget}
+                    onChange={(e) => setBudget(e.target.value)}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent"
+                  >
+                    <option value="">Select one...</option>
+                    <option value="under-1000">Under $1,000</option>
+                    <option value="1000-2500">$1,000 – $2,500</option>
+                    <option value="2500-5000">$2,500 – $5,000</option>
+                    <option value="5000-10000">$5,000 – $10,000</option>
+                    <option value="10000+">$10,000+</option>
+                  </select>
+
+                  {/* Under $1,000 inline message */}
+                  {isUnqualified && (
+                    <div className="mt-3 p-4 bg-gray-50 border border-gray-200 rounded-lg">
+                      <p className="text-gray-700 text-sm leading-relaxed">
+                        Thank you for your interest in Roseway Studio. Our engagements start at $2,500 for
+                        standalone technology projects and $2,500–$3,500 for strategic consulting. If that's
+                        outside your current budget, we'd encourage you to reach back out when the timing is
+                        right — we're happy to have that conversation then.
+                      </p>
+                    </div>
+                  )}
                 </div>
 
                 {/* Message */}
                 <div>
                   <label htmlFor="message" className="block text-navy font-semibold mb-2">
-                    Message *
+                    Tell us about your project or challenge *
                   </label>
                   <textarea
                     id="message"
@@ -170,14 +211,19 @@ export default function ContactPage() {
                     required
                     rows={6}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent resize-none"
-                    placeholder="Tell us about your project, challenges, or questions..."
+                    placeholder="Share as much or as little as you'd like — the more context you give us, the better prepared we'll be for our conversation."
                   />
                 </div>
 
-                {/* Submit Button */}
+                {/* Submit — disabled if unqualified */}
                 <button
                   type="submit"
-                  className="w-full bg-teal text-white px-8 py-4 rounded-lg font-semibold hover:bg-teal-dark transition-colors"
+                  disabled={isUnqualified}
+                  className={`w-full px-8 py-4 rounded-lg font-semibold transition-colors ${
+                    isUnqualified
+                      ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                      : 'bg-teal text-white hover:bg-teal-dark'
+                  }`}
                 >
                   Send Message
                 </button>
@@ -212,13 +258,17 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-xl font-bold text-navy mb-2">Location</h3>
                   <p className="text-gray-700">Detroit, MI & Nationwide</p>
-                  <p className="text-gray-600">Serving founders and organizations that have outgrown what vision alone can accomplish, and need the infrastructure to match where they're trying to go</p>
+                  <p className="text-gray-600">
+                    Serving founders and organizations that have outgrown what vision alone can accomplish,
+                    and need the infrastructure to match where they're trying to go
+                  </p>
                 </div>
 
                 <div>
                   <h3 className="text-xl font-bold text-navy mb-2">Schedule a Consultation</h3>
                   <p className="text-gray-600">
-                    Click the link above to schedule your free45-minute consultation.
+                    Use the <strong>Schedule Your Discovery Call</strong> button above to book a free
+                    45-minute conversation directly on our calendar.
                   </p>
                 </div>
               </div>
@@ -229,7 +279,7 @@ export default function ContactPage() {
                 <ol className="space-y-5">
                   {[
                     "We'll respond within 24 hours",
-                    "Schedule a free 45-minute Discovery Call - no pressure, no pitch, just a conversation",
+                    "Schedule a free 45-minute Discovery Call — no pressure, no pitch, just a conversation",
                     "We'll listen to understand where you are, where you're going, and what's in the way",
                     "We'll share what we're hearing and recommend whether and how we can help",
                     "If there's a fit, we'll send you the Service Offering within 24 hours and propose a follow-up to discuss scope and timeline",
@@ -243,7 +293,8 @@ export default function ContactPage() {
                   ))}
                 </ol>
                 <p className="text-gray-600 mt-6 italic text-sm">
-                  No pitch, no pressure — just an honest conversation about whether we're the right fit for where you're going.
+                  No pitch, no pressure — just an honest conversation about whether we're the right fit
+                  for where you're going.
                 </p>
               </div>
             </div>
