@@ -45,7 +45,7 @@ export default function ServicesPage() {
                   <p className="text-gray-600">45 minutes · Limited availability</p>
                 </div>
                 <a
-                  href="https://calendar.app.google/cJjLJ9wEnnHzJVN2A"
+                  href="https://calendly.com/andrea-rosewaystudio/discovery_call"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-teal text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-dark transition-colors text-center whitespace-nowrap"
@@ -287,7 +287,7 @@ export default function ServicesPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href="https://calendar.app.google/cJjLJ9wEnnHzJVN2A"
+                href="https://calendly.com/andrea-rosewaystudio/discovery_call"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-teal text-white px-8 py-4 rounded-lg font-semibold hover:bg-teal-dark transition-colors"

@@ -48,7 +48,7 @@ export default function Navigation() {
                 {link.label}
               </Link>
             ))}
-            <a href="https://calendar.app.google/cJjLJ9wEnnHzJVN2A"
+            <a href="https://calendly.com/andrea-rosewaystudio/discovery_call"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-teal text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-dark transition-colors"
