@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import Script from "next/script";
 import Navigation from "@/components/Navigation";
+import "./globals.css";
 import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -42,6 +43,11 @@ export default function RootLayout({
         <Navigation />
         <main>{children}</main>
         <Footer />
+        <Script
+          id="hs-script-loader"
+          src="//js-na2.hs-scripts.com/243240666.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
