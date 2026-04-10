@@ -121,20 +121,8 @@ export default function AssessBusinessPage() {
     setFormStatus('submitting');
 
     try {
-      const hsFormData = new FormData();
-      hsFormData.append('firstname', firstName);
-      hsFormData.append('lastname', lastName);
-      hsFormData.append('email', email);
-      hsFormData.append('company', orgName);
-      hsFormData.append('readiness_tier', TIER_CONTENT[tier].label);
-      hsFormData.append('audience_type', 'For-Profit');
-      hsFormData.append('assessment_score', String(totalScore));
-      hsFormData.append('assessment_date', new Date().toISOString().split('T')[0]);
-
-      // HubSpot form submission
-      // Replace PORTAL_ID and FORM_ID with actual values after form is created in HubSpot
       const portalId = '243240666';
-      const formId = 'FORPROFIT_FORM_ID';
+      const formId = '78e89b77-5d79-436b-b092-912b659caa58';
 
       const body = {
         fields: [
