@@ -3,8 +3,21 @@ import Button from '@/components/Button';
 
 export const metadata: Metadata = {
   title: 'Our Work | Roseway Studio',
-  description: 'Case studies from Roseway Studio — strategic partnership, fractional COO engagements, and digital infrastructure for mission-driven founders and organizations.',
-};
+  description: 'Case studies from Roseway Studio — strategic alignment engagements and digital infrastructure for founders including A Safe Space for Men, Soulivity Media, SafetyZone Behavioral Health, and Building Better Men.',
+  alternates: {
+    canonical: 'https://rosewaystudio.com/work',
+  },
+  openGraph: {
+    title: 'Our Work | Roseway Studio',
+    description: 'How Roseway Studio helps founders build organizational infrastructure — strategic alignment, fractional COO guidance, and digital infrastructure in practice.',
+    url: 'https://rosewaystudio.com/work',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Our Work | Roseway Studio',
+    description: 'How Roseway Studio helps founders build organizational infrastructure — case studies.',
+  },
+}
 
 export default function WorkPage() {
   return (

@@ -3,8 +3,21 @@ import Button from '@/components/Button';
 
 export const metadata: Metadata = {
   title: 'Services | Roseway Studio',
-  description: 'Strategic partnership, fractional COO guidance, and digital infrastructure for founders and organizations that have outgrown what vision alone can accomplish, and need the infrastructure to match where they\'re trying to go.',
-};
+  description: 'Strategic Alignment Framework, fractional COO retainer, standalone technology projects, and technology advisory services for founders ready to build organizational infrastructure.',
+  alternates: {
+    canonical: 'https://rosewaystudio.com/services',
+  },
+  openGraph: {
+    title: 'Services | Roseway Studio',
+    description: 'Strategic Alignment Framework, fractional COO retainer, and digital infrastructure services for founders ready to build the organization behind the vision.',
+    url: 'https://rosewaystudio.com/services',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Services | Roseway Studio',
+    description: 'Strategic Alignment Framework, fractional COO retainer, and digital infrastructure for founders.',
+  },
+}
 
 export default function ServicesPage() {
   return (

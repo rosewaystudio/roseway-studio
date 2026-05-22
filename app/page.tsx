@@ -1,6 +1,25 @@
+import type { Metadata } from 'next';
 import Hero from '@/components/Hero';
 import ServiceCard from '@/components/ServiceCard';
 import Button from '@/components/Button';
+
+export const metadata: Metadata = {
+  title: 'Roseway Studio | From Idea to Organization',
+  description: 'Detroit-based strategic consulting firm helping founders build the organizational infrastructure to execute their vision. Fractional COO guidance, strategic alignment, and digital infrastructure.',
+  alternates: {
+    canonical: 'https://rosewaystudio.com',
+  },
+  openGraph: {
+    title: 'Roseway Studio | From Idea to Organization',
+    description: 'Detroit-based strategic consulting firm helping founders build the organizational infrastructure to execute their vision.',
+    url: 'https://rosewaystudio.com',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Roseway Studio | From Idea to Organization',
+    description: 'Detroit-based strategic consulting firm helping founders build organizational infrastructure.',
+  },
+}
 
 export default function Home() {
   return (

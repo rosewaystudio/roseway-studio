@@ -3,8 +3,21 @@ import Button from '@/components/Button';
 
 export const metadata: Metadata = {
   title: 'About | Roseway Studio',
-  description: 'Learn about Andrea Frazier and Roseway Studio — strategic partnership and fractional COO services for founders and organizations that have outgrown what vision alone can accomplish, and need the infrastructure to match where they\'re trying to go.',
-};
+  description: 'Andrea Frazier is the Founder and Chief Strategist of Roseway Studio — 30+ years of operational leadership across airport concession operations, Blue Cross Blue Shield of Michigan, and Rocket Mortgage.',
+  alternates: {
+    canonical: 'https://rosewaystudio.com/about',
+  },
+  openGraph: {
+    title: 'About | Roseway Studio',
+    description: 'Andrea Frazier and Roseway Studio — fractional COO services and organizational infrastructure for founders who have outgrown what vision alone can accomplish.',
+    url: 'https://rosewaystudio.com/about',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About | Roseway Studio',
+    description: 'Andrea Frazier — Founder & Chief Strategist, Roseway Studio. 30+ years building operational infrastructure for organizations that matter.',
+  },
+}
 
 export default function AboutPage() {
   return (

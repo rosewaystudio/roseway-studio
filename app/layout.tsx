@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   description: "Detroit-based strategic consulting firm helping founders build the organizational infrastructure to execute their vision. Fractional COO guidance, strategic alignment, and digital infrastructure.",
   keywords: ["fractional COO", "strategic consulting", "organizational infrastructure", "strategic alignment", "Detroit consulting", "founder strategy", "digital infrastructure", "nonprofit strategy"],
   authors: [{ name: "Andrea Frazier" }],
+  verification: {
+    google: "6njVFpsi1uV4exgAALkKH5VPw2jIDqSkGfrmmO07Awo",
+  },
   openGraph: {
     title: "Roseway Studio | From Idea to Organization",
     description: "Helping founders build the organization behind the vision — strategic alignment, fractional COO guidance, and digital infrastructure.",
@@ -19,6 +22,11 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://rosewaystudio.com",
     siteName: "Roseway Studio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Roseway Studio | From Idea to Organization",
+    description: "Helping founders build the organization behind the vision — strategic alignment, fractional COO guidance, and digital infrastructure.",
   },
   icons: {
     icon: [
