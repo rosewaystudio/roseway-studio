@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import { useState } from 'react';
 import ContactForm from './ContactForm';
 
 export const metadata: Metadata = {
