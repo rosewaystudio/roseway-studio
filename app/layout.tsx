@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   keywords: ["fractional COO", "strategic consulting", "organizational infrastructure", "strategic alignment", "Detroit consulting", "founder strategy", "digital infrastructure", "nonprofit strategy"],
   authors: [{ name: "Andrea Frazier" }],
   verification: {
-    google: "6njVFpsi1uV4exgAALkKH5VPw2jIDqSkGfrmmO07Awo",
+    google: "kDnWaqoMhcZ-Acf-qroibpXJ3OoiublvfRtYnDuPI34",
   },
   openGraph: {
     title: "Roseway Studio | From Idea to Organization",
