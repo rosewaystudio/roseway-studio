@@ -54,3 +54,28 @@
     text-wrap: balance;
   }
 }
+/* Policy pages */
+.legal-prose h2 {
+  @apply text-2xl font-bold text-navy mt-10 mb-4;
+}
+.legal-prose h3 {
+  @apply text-lg font-bold text-navy mt-6 mb-2;
+}
+.legal-prose p {
+  @apply text-gray-700 leading-relaxed mb-4;
+}
+.legal-prose ul {
+  @apply list-disc pl-6 mb-4 space-y-2 text-gray-700;
+}
+.legal-prose a {
+  @apply text-navy underline underline-offset-4 hover:text-teal-dark;
+}
+.legal-prose table {
+  @apply w-full text-left text-sm mb-6 border-collapse;
+}
+.legal-prose th {
+  @apply font-semibold text-navy border-b-2 border-gray-200 py-2 pr-4 align-top;
+}
+.legal-prose td {
+  @apply text-gray-700 border-b border-gray-100 py-2 pr-4 align-top;
+}
