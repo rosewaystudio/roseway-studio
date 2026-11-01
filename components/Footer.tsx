@@ -41,6 +41,12 @@ export default function Footer() {
                 About
               </Link>
               <Link 
+                href="/foundation-quest" 
+                className="text-gray-300 hover:text-teal transition-colors"
+              >
+                Foundation Quest
+              </Link>
+              <Link 
                 href="/contact" 
                 className="text-gray-300 hover:text-teal transition-colors"
               >

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Hero from '@/components/Hero';
 import ServiceCard from '@/components/ServiceCard';
 import Button from '@/components/Button';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Roseway Studio | From Idea to Organization',
@@ -191,6 +192,27 @@ export default function Home() {
                 They didn&apos;t need someone to build them a website. They needed a partner to help them become an organization. That&apos;s what Roseway Studio does.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Foundation Quest bridge */}
+      <section className="bg-navy py-12">
+        <div className="container-width">
+          <div className="max-w-4xl mx-auto flex flex-col md:flex-row md:items-center gap-6 md:gap-10">
+            <div className="flex-1">
+              <p className="text-teal font-semibold text-sm uppercase tracking-wide mb-2">Just getting started?</p>
+              <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">Build your foundation first with Foundation Quest</h2>
+              <p className="text-gray-300 text-lg">
+                A free, Michigan-specific web app for solo founders. Tell it what you sell, and it walks you through the business basics you need, what each one is, and why it matters.
+              </p>
+            </div>
+            <Link
+              href="/foundation-quest"
+              className="bg-teal text-white px-8 py-4 rounded-lg font-semibold hover:bg-teal-dark transition-colors text-center whitespace-nowrap"
+            >
+              Explore Foundation Quest
+            </Link>
           </div>
         </div>
       </section>
