@@ -10,6 +10,7 @@ export default function Navigation() {
   const navLinks = [
     { href: '/services', label: 'Services' },
     { href: '/work', label: 'Work' },
+    { href: '/foundation-quest', label: 'Foundation Quest' },
     { href: '/about', label: 'About' },
     { href: '/contact', label: 'Contact' },
   ];
@@ -38,7 +39,7 @@ export default function Navigation() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-6 xl:gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -60,7 +61,7 @@ export default function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 text-navy"
+            className="lg:hidden p-2 text-navy"
             aria-label="Toggle menu"
             aria-expanded={mobileMenuOpen}
           >
@@ -78,7 +79,7 @@ export default function Navigation() {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-gray-100">
+          <div className="lg:hidden py-4 border-t border-gray-100">
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <Link
