@@ -57,7 +57,7 @@ export default function ContactForm() {
     }
   }
 
-  const isUnqualified = budget === 'under-1000';
+  const isUnqualified = budget === 'under-500';
 
   return (
     <>
@@ -221,21 +221,23 @@ export default function ContactForm() {
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent"
                   >
                     <option value="">Select one...</option>
-                    <option value="under-1000">Under $1,000</option>
+                    <option value="under-500">Under $500</option>
+                    <option value="500-1000">$500 – $1,000</option>
                     <option value="1000-2500">$1,000 – $2,500</option>
                     <option value="2500-5000">$2,500 – $5,000</option>
                     <option value="5000-10000">$5,000 – $10,000</option>
                     <option value="10000+">$10,000+</option>
                   </select>
 
-                  {/* Under $1,000 inline message */}
+                  {/* Under $500 inline message */}
                   {isUnqualified && (
                     <div className="mt-3 p-4 bg-gray-50 border border-gray-200 rounded-lg">
                       <p className="text-gray-700 text-sm leading-relaxed">
-                        Thank you for your interest in Roseway Studio. Our engagements start at $2,500 for
-                        standalone technology projects and $2,500–$3,500 for strategic consulting. If that's
-                        outside your current budget, we'd encourage you to reach back out when the timing is
-                        right — we're happy to have that conversation then.
+                        Thank you for your interest in Roseway Studio. Our services start at $500–$750 for a
+                        Technology Advisory Session, from $750 for standalone technology projects, and
+                        $2,500–$3,500 for the Strategic Alignment Framework. If that's outside your current
+                        budget, we'd encourage you to reach back out when the timing is right — we're happy to
+                        have that conversation then.
                       </p>
                       <p className="text-gray-700 text-sm leading-relaxed mt-3">
                         Just getting started?{' '}
