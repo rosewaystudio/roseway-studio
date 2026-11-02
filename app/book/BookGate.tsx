@@ -10,18 +10,22 @@ import { FOUNDATION_QUEST_SITE } from '@/lib/links';
 const CALENDLY_URL = 'https://calendly.com/andrea-rosewaystudio/discovery_call';
 const SCREENED = 'under-500';
 
+// `calendly` must match the Discovery Call's budget answers in Calendly exactly
+// (custom question 3, so it pre-fills as a3). Check here if those answers change.
 const options = [
-  { value: 'under-500', label: 'Under $500' },
-  { value: '500-1000', label: '$500 – $1,000' },
-  { value: '1000-2500', label: '$1,000 – $2,500' },
-  { value: '2500-5000', label: '$2,500 – $5,000' },
-  { value: '5000-10000', label: '$5,000 – $10,000' },
-  { value: '10000+', label: '$10,000+' },
+  { value: 'under-500', label: 'Under $500', calendly: 'Under $500' },
+  { value: '500-1000', label: '$500 – $1,000', calendly: '$500 – $1,000' },
+  { value: '1000-2500', label: '$1,000 – $2,500', calendly: '$1,000 – $2,500' },
+  { value: '2500-5000', label: '$2,500 – $5,000', calendly: '$2,500 – $5,000' },
+  { value: '5000-10000', label: '$5,000 – $10,000', calendly: '$5,000 - $10,000' },
+  { value: '10000+', label: '$10,000+', calendly: '$10,000+' },
 ];
 
 export default function BookGate() {
   const [budget, setBudget] = useState('');
   const qualified = budget !== '' && budget !== SCREENED;
+  const calendlyBudget = options.find((o) => o.value === budget)?.calendly || '';
+  const embedSrc = `${CALENDLY_URL}?embed_domain=rosewaystudio.com&embed_type=Inline&a3=${encodeURIComponent(calendlyBudget)}`;
 
   return (
     <div className="max-w-3xl mx-auto">
@@ -72,7 +76,7 @@ export default function BookGate() {
           <p className="text-gray-700 mb-4">
             Great. Pick a time that works for you below. If the calendar doesn&apos;t load,{' '}
             <a
-              href={CALENDLY_URL}
+              href={`${CALENDLY_URL}?a3=${encodeURIComponent(calendlyBudget)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="text-navy font-semibold underline underline-offset-4"
@@ -82,7 +86,8 @@ export default function BookGate() {
             .
           </p>
           <iframe
-            src={`${CALENDLY_URL}?embed_domain=rosewaystudio.com&embed_type=Inline`}
+            key={budget}
+            src={embedSrc}
             title="Book a Discovery Call with Roseway Studio"
             className="w-full rounded-xl border border-gray-200 bg-white"
             style={{ height: 760 }}
