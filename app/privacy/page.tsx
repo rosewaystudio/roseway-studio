@@ -26,12 +26,13 @@ export default function PrivacyPage() {
         <li><strong>Contact form:</strong> your name, email, organization name, how you heard about us, your current situation, the kind of engagement you&apos;re exploring, your approximate budget, and anything you write in your message.</li>
         <li><strong>Readiness assessments:</strong> your first and last name, email, organization name, your answers, and the resulting score and readiness tier.</li>
         <li><strong>Foundation Quest waitlist:</strong> your first name, email, which paid options interest you, and what you sell.</li>
+        <li><strong>Foundation Quest map request:</strong> the details listed under &ldquo;The Foundation Quest app&rdquo; below.</li>
         <li><strong>Scheduling:</strong> if you book a call, the details you enter in our scheduling tool (Calendly).</li>
         <li><strong>Email and calls:</strong> anything you share when you write to us or talk with us.</li>
       </ul>
       <h3>The Foundation Quest app</h3>
       <p>
-        In its current prototype version, the Foundation Quest app does not save or send the answers you enter. They stay in your browser and disappear when you leave or start over. If that changes, for example when we add the option to email you your foundation map, we&apos;ll update this policy before it goes live.
+        Your answers in the Foundation Quest app stay in your browser while you use it. We don&apos;t save them unless you ask us to email you your map. If you do, we receive your first name, email, the kinds of business you chose, how complete your map is, your top three next moves, and whether you&apos;d like to talk with a person.
       </p>
       <h3>Information collected automatically</h3>
       <ul>
@@ -43,7 +44,7 @@ export default function PrivacyPage() {
       <h2>How we use it</h2>
       <ul>
         <li>To reply to you and schedule conversations you ask for.</li>
-        <li>To send you the assessment results, checklists, or waitlist updates you requested.</li>
+        <li>To send you the assessment results, checklists, foundation map, or waitlist updates you requested.</li>
         <li>To manage our relationship with clients and prospective clients.</li>
         <li>To understand how the Sites are used and improve them.</li>
         <li>To keep the Sites secure and meet legal obligations.</li>
@@ -59,8 +60,7 @@ export default function PrivacyPage() {
           <tr><th>Provider</th><th>What it does for us</th></tr>
         </thead>
         <tbody>
-          <tr><td>HubSpot</td><td>Customer records, assessment submissions, email, and (with consent) website analytics</td></tr>
-          <tr><td>Web3Forms</td><td>Delivers contact and waitlist form submissions to our inbox</td></tr>
+          <tr><td>HubSpot</td><td>Receives our website and app form submissions; customer records, email, and (with consent) website analytics</td></tr>
           <tr><td>Calendly</td><td>Scheduling for discovery calls and sessions</td></tr>
           <tr><td>Google Workspace</td><td>Our business email</td></tr>
           <tr><td>Vercel</td><td>Hosts the Sites</td></tr>
