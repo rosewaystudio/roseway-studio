@@ -10,7 +10,8 @@ import Link from 'next/link';
 export default function FqPointer() {
   return (
     <div className="pointer-events-none absolute inset-x-0 top-0 z-10 hidden sm:block">
-      <div className="container-width relative">
+      <div className="container-width">
+        <div className="relative">
         <Link
           href="/foundation-quest"
           aria-label="Try Foundation Quest for free"
@@ -46,6 +47,7 @@ export default function FqPointer() {
             <path d="M118 0 L107 17 L129 17 Z" fill="#2BB3C0" />
           </svg>
         </Link>
+        </div>
       </div>
     </div>
   );
