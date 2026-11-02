@@ -10,10 +10,15 @@ export default function Navigation() {
   const navLinks = [
     { href: '/services', label: 'Services' },
     { href: '/work', label: 'Work' },
-    { href: '/foundation-quest', label: 'Foundation Quest' },
     { href: '/about', label: 'About' },
     { href: '/contact', label: 'Contact' },
   ];
+
+  // TEMPORARY (Nov 2026): Foundation Quest gets its own button while the
+  // Torch of Wisdom competition review is underway. Afterward, tone it down
+  // (e.g. an outlined pill) or move it back into navLinks.
+  const fqButton =
+    'bg-navy text-white px-5 py-3 rounded-lg font-semibold hover:bg-navy-dark transition-colors text-center';
 
   return (
     <nav className="bg-white border-b border-gray-100 sticky top-0 z-50">
@@ -39,7 +44,7 @@ export default function Navigation() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-6 xl:gap-8">
+          <div className="hidden xl:flex items-center gap-6">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -49,19 +54,27 @@ export default function Navigation() {
                 {link.label}
               </Link>
             ))}
+            <Link href="/foundation-quest" className={fqButton}>
+              Foundation Quest
+            </Link>
             <a href="https://calendly.com/andrea-rosewaystudio/discovery_call"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-teal text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-dark transition-colors"
+              className="bg-teal text-white px-5 py-3 rounded-lg font-semibold hover:bg-teal-dark transition-colors"
             >
-              Schedule Your Discovery Call
+              Book a Discovery Call
             </a>
           </div>
 
+          {/* Tablet / small laptop: keep the FQ button visible beside the menu icon */}
+          <div className="flex items-center gap-3 xl:hidden">
+            <Link href="/foundation-quest" className={`${fqButton} hidden sm:inline-block`}>
+              Foundation Quest
+            </Link>
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 text-navy"
+            className="xl:hidden p-2 text-navy"
             aria-label="Toggle menu"
             aria-expanded={mobileMenuOpen}
           >
@@ -75,11 +88,12 @@ export default function Navigation() {
               </svg>
             )}
           </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="lg:hidden py-4 border-t border-gray-100">
+          <div className="xl:hidden py-4 border-t border-gray-100">
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <Link
@@ -91,13 +105,20 @@ export default function Navigation() {
                   {link.label}
                 </Link>
               ))}
+              <Link
+                href="/foundation-quest"
+                onClick={() => setMobileMenuOpen(false)}
+                className={fqButton}
+              >
+                Foundation Quest
+              </Link>
               <a href="https://calendly.com/andrea-rosewaystudio/discovery_call"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}
                 className="bg-teal text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-dark transition-colors text-center"
               >
-                Schedule Your Discovery Call
+                Book a Discovery Call
               </a>
             </div>
           </div>
