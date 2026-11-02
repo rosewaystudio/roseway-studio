@@ -190,6 +190,7 @@ export default function ContactForm() {
                     {[
                       'Strategic Alignment Framework',
                       'Strategic Partnership Retainer',
+                      'Technology Advisory Session',
                       'Website Design & Development',
                       'Workspace Implementation',
                       'Not Sure — Need Consultation',

@@ -3,7 +3,7 @@ import Button from '@/components/Button';
 
 export const metadata: Metadata = {
   title: 'About | Roseway Studio',
-  description: 'Andrea Frazier is the Founder and Chief Strategist of Roseway Studio — 30+ years of operational leadership across airport concession operations, Blue Cross Blue Shield of Michigan, and Rocket Mortgage.',
+  description: 'Andrea Frazier is the Founder and CEO of Roseway Studio — 30+ years of operational leadership across airport concession operations, Blue Cross Blue Shield of Michigan, and Rocket Mortgage.',
   alternates: {
     canonical: 'https://rosewaystudio.com/about',
   },
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'About | Roseway Studio',
-    description: 'Andrea Frazier — Founder & Chief Strategist, Roseway Studio. 30+ years building operational infrastructure for organizations that matter.',
+    description: 'Andrea Frazier — Founder & CEO, Roseway Studio. 30+ years building operational infrastructure for organizations that matter.',
   },
 }
 
@@ -69,11 +69,11 @@ export default function AboutPage() {
 
             <div className="text-center mb-8">
               <h3 className="text-3xl font-bold text-navy mb-1">Andrea E. Frazier</h3>
-              <p className="text-teal font-semibold text-lg">Founder & Chief Strategist, Roseway Studio</p>
+              <p className="text-teal font-semibold text-lg">Founder & CEO, Roseway Studio</p>
             </div>
 
             <p className="text-lg text-gray-700 mb-6 text-justify">
-              Andrea E. Frazier is the Founder and Chief Strategist of Roseway Studio, a Detroit-based strategic consulting firm that helps founders build the organizational infrastructure to execute their vision. She founded Roseway Studio on a single conviction: that the organizations doing the most important work deserve the same quality of strategic infrastructure as anyone else — built around their purpose, not borrowed from a template.
+              Andrea E. Frazier is the Founder and CEO of Roseway Studio, a Detroit-based strategic consulting firm that helps founders build the organizational infrastructure to execute their vision. She founded Roseway Studio on a single conviction: that the organizations doing the most important work deserve the same quality of strategic infrastructure as anyone else — built around their purpose, not borrowed from a template.
             </p>
             <p className="text-gray-700 mb-6 text-justify">
               Andrea brings more than 30 years of operational leadership experience across three distinct chapters. She began her career co-leading Jay Gregory Enterprises, a Detroit-based woman-owned small business that operated multi-sector concession contracts at Detroit Metropolitan Wayne County Airport, managing partnerships across retail, food and beverage, and parking operations for 15 years. That experience gave her an early and deep education in the realities of running complex organizations: navigating government contracts, managing diverse partner relationships, maintaining operational performance under regulatory scrutiny, and leading through circumstances that no business plan fully anticipates.

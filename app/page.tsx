@@ -31,7 +31,7 @@ export default function Home() {
         <FqPointer />
       <Hero
         title="You built something real."
-        subtitle="Now build the organization behind it."
+        subtitle="Now build the organization to carry it."
         primaryCTA={{
           text: "Start the Conversation",
           href: "/contact"
