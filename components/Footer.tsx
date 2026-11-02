@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import CookieSettingsButton from './CookieSettingsButton';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -41,6 +42,12 @@ export default function Footer() {
                 About
               </Link>
               <Link 
+                href="/foundation-quest" 
+                className="text-gray-300 hover:text-teal transition-colors"
+              >
+                Foundation Quest
+              </Link>
+              <Link 
                 href="/contact" 
                 className="text-gray-300 hover:text-teal transition-colors"
               >
@@ -58,7 +65,14 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
-          <p>© {currentYear} Roseway Studio. All rights reserved.</p>
+          <nav aria-label="Legal" className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-4">
+            <Link href="/privacy" className="hover:text-teal transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-teal transition-colors">Terms of Use</Link>
+            <Link href="/refunds" className="hover:text-teal transition-colors">Refund &amp; Cancellation</Link>
+            <Link href="/accessibility" className="hover:text-teal transition-colors">Accessibility</Link>
+            <CookieSettingsButton className="hover:text-teal transition-colors" />
+          </nav>
+          <p>© {currentYear} Roseway Studio, a dba of Velora LLC. All rights reserved.</p>
         </div>
       </div>
     </footer>

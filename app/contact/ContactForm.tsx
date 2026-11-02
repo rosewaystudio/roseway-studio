@@ -1,12 +1,63 @@
 'use client';
 
 import { useState } from 'react';
+import { FOUNDATION_QUEST_SITE } from '@/lib/links';
+
+// HubSpot form "Roseway – Website contact" (portal 243240666)
+const HS_PORTAL = '243240666';
+const HS_CONTACT_FORM = '6665a7f6-d7e2-42b9-9eef-ea3d82e11fb9';
 
 export default function ContactForm() {
   const [budget, setBudget] = useState('');
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState('');
 
-  const isUnqualified = budget === 'under-1000';
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const data = new FormData(form);
+    if (data.get('botcheck')) return;
+    const full = String(data.get('name') || '').trim();
+    const [firstname, ...rest] = full.split(/\s+/);
+    const fields = [
+      { name: 'firstname', value: firstname || '' },
+      { name: 'lastname', value: rest.join(' ') },
+      { name: 'email', value: String(data.get('email') || '') },
+      { name: 'company', value: String(data.get('organization') || '') },
+      { name: 'rs_referral_source', value: String(data.get('referralSource') || '') },
+      { name: 'rs_situation', value: String(data.get('situation') || '') },
+      { name: 'rs_engagement_type', value: data.getAll('engagementType').map(String).join('; ') },
+      { name: 'rs_budget', value: String(data.get('budget') || '') },
+      { name: 'message', value: String(data.get('message') || '') },
+    ];
+    setSending(true);
+    setError('');
+    try {
+      const res = await fetch(
+        `https://api.hsforms.com/submissions/v3/integration/submit/${HS_PORTAL}/${HS_CONTACT_FORM}`,
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            fields,
+            context: { pageUri: 'https://rosewaystudio.com/contact', pageName: 'Contact' },
+          }),
+        }
+      );
+      if (!res.ok) throw new Error(String(res.status));
+      setSubmitted(true);
+      form.reset();
+      setBudget('');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } catch {
+      setError('Something went wrong. Please try again, or email andrea@rosewaystudio.com.');
+    } finally {
+      setSending(false);
+    }
+  }
+
+  const isUnqualified = budget === 'under-500';
 
   return (
     <>
@@ -38,17 +89,8 @@ export default function ContactForm() {
             <div>
               <h2 className="text-3xl font-bold text-navy mb-6">Tell Us About Where You Are</h2>
 
-              <form
-                action="https://api.web3forms.com/submit"
-                method="POST"
-                className="space-y-6"
-                onSubmit={() => setSubmitted(true)}
-              >
-                <input type="hidden" name="access_key" value={process.env.NEXT_PUBLIC_WEB3FORMS_KEY} />
-                <input type="hidden" name="redirect" value="https://rosewaystudio.com/contact?success=true" />
-                <input type="hidden" name="subject" value="New Contact Form Submission from Roseway Studio Website" />
-                <input type="hidden" name="from_name" value="Roseway Studio Website" />
-                <input type="checkbox" name="botcheck" className="hidden" />
+              <form className="space-y-6" onSubmit={handleSubmit}>
+                <input type="checkbox" name="botcheck" className="hidden" tabIndex={-1} autoComplete="off" />
 
                 {/* Name */}
                 <div>
@@ -179,21 +221,30 @@ export default function ContactForm() {
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent"
                   >
                     <option value="">Select one...</option>
-                    <option value="under-1000">Under $1,000</option>
+                    <option value="under-500">Under $500</option>
+                    <option value="500-1000">$500 – $1,000</option>
                     <option value="1000-2500">$1,000 – $2,500</option>
                     <option value="2500-5000">$2,500 – $5,000</option>
                     <option value="5000-10000">$5,000 – $10,000</option>
                     <option value="10000+">$10,000+</option>
                   </select>
 
-                  {/* Under $1,000 inline message */}
+                  {/* Under $500 inline message */}
                   {isUnqualified && (
                     <div className="mt-3 p-4 bg-gray-50 border border-gray-200 rounded-lg">
                       <p className="text-gray-700 text-sm leading-relaxed">
-                        Thank you for your interest in Roseway Studio. Our engagements start at $2,500 for
-                        standalone technology projects and $2,500–$3,500 for strategic consulting. If that's
-                        outside your current budget, we'd encourage you to reach back out when the timing is
-                        right — we're happy to have that conversation then.
+                        Thank you for your interest in Roseway Studio. Our services start at $500–$750 for a
+                        Technology Advisory Session, from $750 for standalone technology projects, and
+                        $2,500–$3,500 for the Strategic Alignment Framework. If that's outside your current
+                        budget, we'd encourage you to reach back out when the timing is right — we're happy to
+                        have that conversation then.
+                      </p>
+                      <p className="text-gray-700 text-sm leading-relaxed mt-3">
+                        Just getting started?{' '}
+                        <a href={FOUNDATION_QUEST_SITE} target="_blank" rel="noopener noreferrer" className="text-navy font-semibold underline underline-offset-4">
+                          Foundation Quest
+                        </a>{' '}
+                        is a free web app that maps the business foundations you need, with low-cost workshops and sessions coming soon.
                       </p>
                     </div>
                   )}
@@ -215,16 +266,19 @@ export default function ContactForm() {
                 </div>
 
                 {/* Submit — disabled if unqualified */}
+                {error && (
+                  <p className="text-red-700 text-sm" role="alert">{error}</p>
+                )}
                 <button
                   type="submit"
-                  disabled={isUnqualified}
+                  disabled={isUnqualified || sending}
                   className={`w-full px-8 py-4 rounded-lg font-semibold transition-colors ${
                     isUnqualified
                       ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
                       : 'bg-teal text-white hover:bg-teal-dark'
                   }`}
                 >
-                  Send Message
+                  {sending ? 'Sending…' : 'Send Message'}
                 </button>
               </form>
             </div>
