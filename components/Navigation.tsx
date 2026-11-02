@@ -25,39 +25,35 @@ export default function Navigation() {
       <div className="container-width">
         <div className="flex items-center justify-between h-20">
           {/* Logo + Wordmark */}
-            <Link
-              href="/"
-              className="flex items-center gap-3 hover:opacity-80 transition-opacity"
-              aria-label="Roseway Studio home"
-            >
-              <Image
-                src="/compass-rose-dark-3.jpeg"
-                alt="Roseway Studio compass rose logo"
-                width={40}
-                height={40}
-                className="w-10 h-10 object-contain"
-                priority
-              />
-              <span className="text-2xl font-bold text-navy">
-                Roseway Studio
-              </span>
-            </Link>
+          <Link
+            href="/"
+            className="flex items-center gap-3 hover:opacity-80 transition-opacity"
+            aria-label="Roseway Studio home"
+          >
+            <Image
+              src="/compass-rose-dark-3.jpeg"
+              alt="Roseway Studio compass rose logo"
+              width={40}
+              height={40}
+              className="w-10 h-10 object-contain"
+              priority
+            />
+            <span className="text-2xl font-bold text-navy">
+              Roseway Studio
+            </span>
+          </Link>
 
-            {/* Desktop page links: spread evenly between the logo and the buttons */}
-            <div className="hidden xl:flex flex-1 items-center justify-evenly px-8">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="text-gray-700 hover:text-teal font-medium transition-colors"
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
-
-          {/* Desktop buttons, on the right */}
-          <div className="hidden xl:flex items-center gap-3">
+          {/* Desktop Navigation */}
+          <div className="hidden xl:flex items-center gap-6">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-gray-700 hover:text-teal font-medium transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
             <Link href="/foundation-quest" className={fqButton}>
               Foundation Quest
             </Link>
