@@ -292,10 +292,10 @@ export default function ContactForm() {
                 <div>
                   <h3 className="text-xl font-bold text-navy mb-2">Email</h3>
                   <a
-                    href="mailto:andrea@rosewaystudio.com"
+                    href="mailto:contact@rosewaystudio.com"
                     className="text-teal hover:text-teal-dark text-lg transition-colors"
                   >
-                    andrea@rosewaystudio.com
+                    contact@rosewaystudio.com
                   </a>
                 </div>
 
