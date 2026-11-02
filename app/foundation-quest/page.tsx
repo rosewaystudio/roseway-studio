@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import WaitlistForm from './WaitlistForm';
-import { FOUNDATION_QUEST_URL } from '@/lib/links';
+import { FOUNDATION_QUEST_SITE, FOUNDATION_QUEST_URL } from '@/lib/links';
 
 export const metadata: Metadata = {
   title: 'Foundation Quest | Roseway Studio',
@@ -153,55 +152,25 @@ export default function FoundationQuestPage() {
         </div>
       </section>
 
-      {/* Pricing */}
-      <section className="section-padding bg-gray-100" id="pricing">
+      {/* Workshops & sessions teaser */}
+      <section className="section-padding bg-navy">
         <div className="container-width">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4 text-center">Free to start, low cost when you want help</h2>
-            <p className="text-xl text-gray-700 text-center mb-12">The map is free. Paid help is coming soon.</p>
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-navy rounded-xl p-8 flex flex-col">
-                <p className="text-teal font-semibold text-sm uppercase tracking-wide mb-2">Foundation map</p>
-                <p className="text-4xl font-bold text-white mb-3">Free</p>
-                <p className="text-gray-300 mb-6 flex-1">The full quest, your foundation map, and your next three moves.</p>
-                <a
-                  href={FOUNDATION_QUEST_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-teal text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-dark transition-colors text-center"
-                >
-                  Start now<span className="sr-only"> (opens in a new tab)</span>
-                </a>
-              </div>
-              {[
-                { name: 'Foundation Workshop', price: '$25–$50', unit: 'per person', body: 'A live group session working through your map, together.' },
-                { name: 'Foundation Session', price: '$150–$250', unit: 'one on one', body: 'A sequenced action plan and vetted referrals for your situation.' },
-              ].map((t) => (
-                <div key={t.name} className="bg-white border border-gray-200 rounded-xl p-8 flex flex-col">
-                  <div className="flex items-center justify-between mb-2 gap-2">
-                    <p className="text-teal-dark font-semibold text-sm uppercase tracking-wide">{t.name}</p>
-                    <span className="text-xs font-semibold bg-gray-100 text-gray-600 rounded-full px-3 py-1 whitespace-nowrap">Coming soon</span>
-                  </div>
-                  <p className="text-4xl font-bold text-navy">{t.price}</p>
-                  <p className="text-gray-500 mb-3">{t.unit}</p>
-                  <p className="text-gray-600 mb-6 flex-1">{t.body}</p>
-                  <a href="#waitlist" className="border-2 border-navy text-navy px-6 py-3 rounded-lg font-semibold hover:bg-navy hover:text-white transition-colors text-center">
-                    Join the waitlist
-                  </a>
-                </div>
-              ))}
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Want help working through your map?</h2>
+            <p className="text-xl text-gray-300 mb-8">
+              The foundation map is always free. Low-cost Foundation Workshops (group) and Foundation Sessions (one on one) are coming soon. Join the waitlist on the Foundation Quest site.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <StartButton />
+              <a
+                href={`${FOUNDATION_QUEST_SITE}/#pricing`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-navy transition-colors inline-block text-center"
+              >
+                See workshops &amp; sessions<span className="sr-only"> (opens in a new tab)</span>
+              </a>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Waitlist */}
-      <section className="section-padding bg-navy" id="waitlist">
-        <div className="container-width">
-          <div className="max-w-xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">Get first word on Workshops and Sessions</h2>
-            <p className="text-lg text-gray-300 text-center mb-8">Join the waitlist and we&apos;ll email you when paid options open.</p>
-            <WaitlistForm />
           </div>
         </div>
       </section>
