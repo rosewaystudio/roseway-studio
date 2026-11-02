@@ -51,7 +51,7 @@ export default function ContactForm() {
       setBudget('');
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } catch {
-      setError('Something went wrong. Please try again, or email andrea@rosewaystudio.com.');
+      setError('Something went wrong. Please try again, or email contact@rosewaystudio.com.');
     } finally {
       setSending(false);
     }
