@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Button from '@/components/Button';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Services | Roseway Studio',
@@ -57,14 +58,12 @@ export default function ServicesPage() {
                   <p className="text-2xl font-bold text-navy mb-1">Complimentary</p>
                   <p className="text-gray-600">45 minutes · Limited availability</p>
                 </div>
-                <a
-                  href="https://calendly.com/andrea-rosewaystudio/discovery_call"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  href="/book"
                   className="bg-teal text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-dark transition-colors text-center whitespace-nowrap"
                 >
-                  Schedule Your Discovery Call
-                </a>
+                  Book a Discovery Call
+                </Link>
               </div>
             </div>
           </div>
@@ -359,14 +358,12 @@ export default function ServicesPage() {
               Start with a discovery conversation. We'll spend 45 minutes understanding where you are, where you're going, and whether the Strategic Alignment Framework is the right next step.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a
-                href="https://calendly.com/andrea-rosewaystudio/discovery_call"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/book"
                 className="bg-teal text-white px-8 py-4 rounded-lg font-semibold hover:bg-teal-dark transition-colors"
               >
                 Start the Conversation
-              </a>
+              </Link>
               <a
                 href="mailto:andrea@rosewaystudio.com"
                 className="text-white hover:text-teal transition-colors font-medium"

@@ -321,8 +321,9 @@ export default function ContactForm() {
                 <div>
                   <h3 className="text-xl font-bold text-navy mb-2">Schedule a Consultation</h3>
                   <p className="text-gray-600">
-                    Use the <strong>Schedule Your Discovery Call</strong> button above to book a free
-                    45-minute conversation directly on our calendar.
+                    Use the <strong>Book a Discovery Call</strong> button above, or{' '}
+                    <a href="/book" className="text-teal-dark font-semibold underline underline-offset-4">book here</a>,
+                    for a free 45-minute conversation on our calendar.
                   </p>
                 </div>
               </div>
