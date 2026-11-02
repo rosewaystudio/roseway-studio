@@ -151,7 +151,7 @@ export default function ContactForm() {
                     <option value="Referral">Referral</option>
                     <option value="LinkedIn">LinkedIn</option>
                     <option value="Black Tech Saturdays">Black Tech Saturdays</option>
-                    <option value="TechTown Detroit">TechTown Detroit</option>
+                    <option value="Michigan Black Business Association">Michigan Black Business Association</option>
                     <option value="Google Search">Google Search</option>
                     <option value="Other">Other</option>
                   </select>
@@ -190,6 +190,7 @@ export default function ContactForm() {
                     {[
                       'Strategic Alignment Framework',
                       'Strategic Partnership Retainer',
+                      'Technology Advisory Services',
                       'Website Design & Development',
                       'Workspace Implementation',
                       'Not Sure — Need Consultation',
