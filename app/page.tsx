@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Hero from '@/components/Hero';
+import FqPointer from '@/components/FqPointer';
 import ServiceCard from '@/components/ServiceCard';
 import Button from '@/components/Button';
 import Link from 'next/link';
@@ -25,7 +26,9 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      {/* Hero Section */}
+      {/* Hero Section, with the "Try for free" arrow pointing at the Foundation Quest nav button */}
+      <div className="relative">
+        <FqPointer />
       <Hero
         title="You built something real."
         subtitle="Now build the organization behind it."
@@ -38,6 +41,7 @@ export default function Home() {
           href: "/services"
         }}
       />
+      </div>
 
       {/* Positioning Statement */}
       <section className="section-padding bg-white">

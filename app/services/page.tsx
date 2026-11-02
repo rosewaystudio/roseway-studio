@@ -217,7 +217,7 @@ export default function ServicesPage() {
             <div className="bg-teal bg-opacity-10 border-l-4 border-teal p-8">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                 <div>
-                  <p className="text-2xl font-bold text-navy mb-1">From $1,500</p>
+                  <p className="text-2xl font-bold text-navy mb-1">From $750</p>
                   <p className="text-gray-600">Scoped individually · Deliverable-based pricing</p>
                 </div>
                 <Button href="/contact">Get a Proposal</Button>
@@ -321,7 +321,7 @@ export default function ServicesPage() {
                     {
                       name: "Standalone Technology Project",
                       sub: "Scoped individually",
-                      price: "From $1,500",
+                      price: "From $750",
                       includes: "Website design/dev · Workspace setup · Digital infrastructure · Defined deliverables",
                     },
                     {
