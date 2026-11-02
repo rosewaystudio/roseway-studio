@@ -63,13 +63,12 @@ export default function Navigation() {
             <Link href="/foundation-quest" className={fqButton}>
               Foundation Quest
             </Link>
-            <a href="https://calendly.com/andrea-rosewaystudio/discovery_call"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/book"
               className="bg-teal text-white px-5 py-3 rounded-lg font-semibold hover:bg-teal-dark transition-colors"
             >
               Book a Discovery Call
-            </a>
+            </Link>
           </div>
 
           {/* Tablet / small laptop: keep the FQ button visible beside the menu icon */}
@@ -118,14 +117,13 @@ export default function Navigation() {
               >
                 Foundation Quest
               </Link>
-              <a href="https://calendly.com/andrea-rosewaystudio/discovery_call"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/book"
                 onClick={() => setMobileMenuOpen(false)}
                 className="bg-teal text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-dark transition-colors text-center"
               >
                 Book a Discovery Call
-              </a>
+              </Link>
             </div>
           </div>
         )}

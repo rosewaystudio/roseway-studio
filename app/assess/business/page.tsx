@@ -208,11 +208,8 @@ export default function AssessBusinessPage() {
                   <p className="text-xl font-semibold text-navy mb-6">
                     Ready to build the organization behind the vision?
                   </p>
-                  <Button
-                    href="https://calendly.com/andrea-rosewaystudio/discovery_call"
-                    variant="primary"
-                  >
-                    Schedule Your Discovery Call
+                  <Button href="/book" variant="primary">
+                    Book a Discovery Call
                   </Button>
                 </div>
               ) : (
