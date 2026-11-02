@@ -30,7 +30,7 @@ export default function Home() {
       <div className="relative">
         <FqPointer />
       <Hero
-        title="You built something real."
+        title="You started with a vision."
         subtitle="Now build the organization behind it."
         primaryCTA={{
           text: "Start the Conversation",
