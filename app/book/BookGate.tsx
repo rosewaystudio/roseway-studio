@@ -15,8 +15,8 @@ const SCREENED = 'under-500';
 const options = [
   { value: 'under-500', label: 'Under $500', calendly: 'Under $500' },
   { value: '500-1000', label: '$500 – $1,000', calendly: '$500 – $1,000' },
-  { value: '1000-2500', label: '$1,000 – $2,500', calendly: '$1,000 – $2,500' },
-  { value: '2500-5000', label: '$2,500 – $5,000', calendly: '$2,500 – $5,000' },
+  { value: '1000-2500', label: '$1,000 – $2,500', calendly: '$1,000 - $2,500' },
+  { value: '2500-5000', label: '$2,500 – $5,000', calendly: '$2,500 - $5,000' },
   { value: '5000-10000', label: '$5,000 – $10,000', calendly: '$5,000 – $10,000' },
   { value: '10000+', label: '$10,000+', calendly: '$10,000+' },
 ];
