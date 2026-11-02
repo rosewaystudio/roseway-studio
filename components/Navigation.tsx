@@ -24,8 +24,7 @@ export default function Navigation() {
     <nav className="bg-white border-b border-gray-100 sticky top-0 z-50">
       <div className="container-width">
         <div className="flex items-center justify-between h-20">
-          {/* Logo + Wordmark, with the page links right beside it */}
-          <div className="flex items-center gap-10">
+          {/* Logo + Wordmark */}
             <Link
               href="/"
               className="flex items-center gap-3 hover:opacity-80 transition-opacity"
@@ -44,8 +43,8 @@ export default function Navigation() {
               </span>
             </Link>
 
-            {/* Desktop page links */}
-            <div className="hidden xl:flex items-center gap-6">
+            {/* Desktop page links: spread evenly between the logo and the buttons */}
+            <div className="hidden xl:flex flex-1 items-center justify-evenly px-8">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
@@ -56,7 +55,6 @@ export default function Navigation() {
                 </Link>
               ))}
             </div>
-          </div>
 
           {/* Desktop buttons, on the right */}
           <div className="hidden xl:flex items-center gap-3">
