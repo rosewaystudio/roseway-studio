@@ -22,6 +22,17 @@ export default function Navigation() {
 
   return (
     <nav className="bg-white border-b border-gray-100 sticky top-0 z-50">
+      {/* TEMPORARY (Nov 2026): phones only (<640px), where the Foundation Quest
+          button is hidden in the menu and the homepage arrow doesn't show. */}
+      <Link
+        href="/foundation-quest"
+        className="sm:hidden flex items-center justify-center gap-2 bg-teal px-4 py-2 text-sm text-navy hover:bg-teal-light transition-colors"
+      >
+        <span>
+          <span className="font-bold">New:</span> Foundation Quest
+        </span>
+        <span className="font-bold whitespace-nowrap underline underline-offset-2">Try for free &rarr;</span>
+      </Link>
       <div className="container-width">
         <div className="flex items-center justify-between h-20">
           {/* Logo + Wordmark, with the page links right beside it */}
@@ -113,9 +124,10 @@ export default function Navigation() {
               <Link
                 href="/foundation-quest"
                 onClick={() => setMobileMenuOpen(false)}
-                className={fqButton}
+                className={`${fqButton} inline-flex items-center justify-center gap-2`}
               >
                 Foundation Quest
+                <span className="rounded-full bg-teal px-2 py-0.5 text-xs font-bold text-navy">Free</span>
               </Link>
               <Link
                 href="/book"
